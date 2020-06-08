@@ -1,0 +1,4 @@
+baseURL: "https://guildflow.com/"
+languageCode: "en-us"
+title: "Guildflow"
+theme: "guildflow-theme"
