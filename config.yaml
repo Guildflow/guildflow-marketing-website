@@ -2,3 +2,23 @@ baseURL: "https://guildflow.com/"
 languageCode: "en-us"
 title: "Guildflow"
 theme: "guildflow-theme"
+params:
+  mainCtaTitle: "Create Group"
+  mainCtaUrl: https://clubhouse.host/create-group
+menu:
+  main:
+    - name: Features
+      url: /features/
+      weight: 10
+    - name: Pricing
+      url: /pricing/
+      weight: 20
+    - name: Blog
+      url: /blog/
+      weight: 40
+    - name: FAQ
+      url: /faq/
+      weight: 50
+    - name: Contact
+      url: /contact/
+      weight: 60

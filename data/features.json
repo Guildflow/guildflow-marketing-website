@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Group Website",
+        "icon": "noun_website_375624.svg",
+        "description": "A website dedicated to your group and not the software hosting it. Use a subdomain or configure your own web domain for ultimate portability."
+    },
+    {
+        "title": "Data Portability",
+        "icon": "noun_Data_2921750.svg",
+        "description": "Don't be held hostage to your group's hosting platform. Own your data, build on top or our platform or export it all and migrate to something new when the time is right."
+    },
+    {
+        "title": "Privacy Controls",
+        "icon": "noun_Privacy_2399381.svg",
+        "description": "Make a members-only private group or a public group where basic info is published but member privacy is still protected."
+    },
+    {
+        "title": "Event Calendar",
+        "icon": "noun_Calendar_3354734.svg",
+        "description": "Create events and accept RSVPs. Share rich descriptions and limit access to online meeting URLs to attendees."
+    },
+    {
+        "title": "Member Profiles",
+        "icon": "noun_profile_3346587.svg",
+        "description": "Allow members to share their backgrounds and interests. Member profiles are always limited to other signed-in members."
+    },
+    {
+        "title": "Leadership Team",
+        "icon": "noun_group_737653.svg",
+        "description": "Share group responsibilities with other members by appointing others to help administer the group."
+    },
+    {
+        "title": "Custom Membership Applications",
+        "icon": "noun_form_2355511.svg",
+        "description": "Add members by hand or allow people to submit a membership application that can be accepted or declined."
+    },
+    {
+        "title": "API Access",
+        "icon": "noun_API_3069782.svg",
+        "description": "Use the GraphQL API endpoint for full data access. Build on top of our platform or backup your data."
+    }
+]

@@ -1,3 +1,93 @@
-.starter {
-  color: blue;
+.prose h1 {
+  @apply text-4xl mb-2 font-bold leading-tight;
+}
+.prose h2 {
+  @apply text-3xl mb-2 font-bold leading-tight;
+}
+.prose h3 {
+  @apply text-2xl mb-2 font-bold leading-tight;
+}
+.prose h4 {
+  @apply text-xl mb-2 font-bold leading-tight;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose h4 + p { 
+  @apply mt-0;
+}
+
+.prose a {
+  @apply text-blue-800 underline;
+}
+
+.prose ul,
+.prose ol {
+  @apply ml-8 mb-2;
+}
+
+.prose ul li {
+  @apply list-disc;
+}
+
+.prose ol li {
+  @apply list-decimal;
+}
+
+.prose-marketing a {
+  @apply text-pink-500 underline;
+}
+
+.prose-marketing a:hover {
+  @apply bg-pink-500 text-gray-100 underline;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+.marketing-full-width-page-container {
+  @apply my-2;
+}
+
+@screen sm {
+  .marketing-full-width-page-container {
+      @apply my-4;
+  }
+}
+
+@screen md {
+  .marketing-full-width-page-container {
+      @apply my-4;
+  }
+}
+
+@screen xl {
+  .marketing-full-width-page-container {
+      @apply my-6;
+  }
+}
+
+.marketing-page-container {
+  @apply px-4 my-2 mx-auto max-w-screen-xl;
+}
+
+@screen sm {
+  .marketing-page-container {
+      @apply px-6 my-4;
+  }
+}
+
+@screen md {
+  .marketing-page-container {
+      @apply px-6 my-4;
+  }
+}
+
+@screen xl {
+  .marketing-page-container {
+      @apply px-8 my-6;
+  }
 }
