@@ -8,7 +8,7 @@ Being early in development, our feature offering is naturally smaller than those
 
 ## Can I import my members from meetup.com?
 
-One of the main reasons we are building Clubhouse is because Meetup.com does not provide the group owner access to the member email addresses. There is no easy way to migrate our of meetup.com. 
+One of the main reasons we are building Clubhouse is because Meetup.com does not provide the group owner access to the member email addresses. There is no easy way to migrate out of meetup.com. 
 
 **Meetup.com is like a roach motel. Once you go in, you can't get out.**
 
