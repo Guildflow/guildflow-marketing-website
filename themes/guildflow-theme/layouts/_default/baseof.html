@@ -7,9 +7,17 @@
 
 <body>
     {{- partial "header.html" . -}}
+
+    {{ if .IsHome }}
+    <main class="marketing-full-width-page-container">
+        {{- block "main" . }}{{- end }}
+    </main>
+    {{ else }}
     <main class="marketing-page-container">
         {{- block "main" . }}{{- end }}
     </main>
+    {{ end }}
+
     {{/* partial "dev-parameters.html" . */}}
     {{- partial "footer.html" . -}}
 </body>
