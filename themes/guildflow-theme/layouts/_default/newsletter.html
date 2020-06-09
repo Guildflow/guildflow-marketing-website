@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="grid grid-cols-1 lg:grid-cols-12">
+    <div class="mb-4 lg:col-span-6 lg:col-start-4">
+
+        <div class="prose prose-marketing ">
+            <h1>Newsletter</h1>
+
+            <p>The Clubhouse newsletter is sent no more than once a month which includes product updates as well as
+                links and
+                resources relevant to meetup organizers.</p>
+
+            <p>No ads. No spam. Just us.</p>
+        </div>
+
+        <form id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post"
+            data-id="2BE4EF332AA2E32596E38B640E905619977C82786A703687953383B5DB3B664280FC7205BAF470983C359E59707E91C711ABCFB59662D59E6C7AF9DCA8F11EDD"
+            class="mt-3 sm:flex js-cm-form">
+            <input aria-label="Email" id="fieldEmail" name="cm-shdjrk-shdjrk" required
+                class="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1 js-cm-email-input"
+                placeholder="Enter your email" />
+            <button type="submit"
+                class="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-500 shadow-sm hover:bg-pink-600 focus:outline-none focus:shadow-outline active:bg-pink-600 transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto js-cm-submit-button">
+                Subscribe
+            </button>
+        </form>
+        <script type="text/javascript"
+            src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+        <p class="prose prose-marketing mt-3 text-sm leading-5 text-gray-500">
+            We care about the protection of your data. Read our
+            <a href="/privacy" class="font-medium text-gray-900 underline">Privacy Policy</a>
+        </p>
+
+    </div>
+
+</div>
+{{ end }}
