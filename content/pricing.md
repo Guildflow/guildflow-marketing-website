@@ -1,5 +1,6 @@
 ---
 title: Pricing
+description: Details on the pricing options for Guildflow.
 layout: "single-basic"
 ---
 

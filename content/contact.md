@@ -1,5 +1,6 @@
 ---
 title: Contact
+description: How to get in contact with the developers of Guildflow.
 layout: "single-basic"
 ---
 

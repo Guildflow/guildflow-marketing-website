@@ -1,8 +1,11 @@
 baseURL: "https://guildflow.com/"
 languageCode: "en-us"
 title: "Guildflow"
+
 theme: "guildflow-theme"
 params:
+  author: Mike Zornek
+  description: Guildflow allows meetup organizers to create a modern group website that respects the data and privacy rights of its members.
   mainCtaTitle: "Create Group"
   mainCtaUrl: https://clubhouse.host/create-group
 menu:

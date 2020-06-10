@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions
+description: Common questions and answers about Guildflow.
 layout: "single-basic"
 ---
 

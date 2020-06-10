@@ -1,11 +1,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ block "title" . }}
-{{- .Title }} - {{ .Site.Title -}}
-{{ end }}</title>
-{{ if .Description }}
-<meta name="description" content="{{ .Description }}" />
-{{ end }}
+    {{- .Title }} - {{ .Site.Title -}}
+    {{ end }}</title>
+<meta name="description" content="
+{{- with .Page.Description -}}
+{{ . }} 
+{{- else -}}
+{{ .Site.Params.description }}
+{{- end -}}" />
 {{ if .Keywords }}
 <meta name="keywords" content="{{ delimit .Keywords "," }}" />
 {{ end }}
@@ -17,8 +20,8 @@
 
 {{ $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 {{ if .Site.IsServer }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ else }}
-    {{ $styles := $styles| minify | fingerprint | resources.PostProcess }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ $styles := $styles| minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 {{ end }}

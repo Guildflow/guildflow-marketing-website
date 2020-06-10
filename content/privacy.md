@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: Detailed information on the kinds of user data we collect and how we use it.
 layout: "single-basic"
 ---
 

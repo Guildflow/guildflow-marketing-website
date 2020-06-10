@@ -1,5 +1,6 @@
 ---
 title: Public Alpha
+description: Learn more about what we mean by public alpha.
 layout: "single-basic"
 ---
 
