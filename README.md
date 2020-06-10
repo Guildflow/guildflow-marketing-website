@@ -9,3 +9,8 @@ To run the site locally use:
 To make a new post
 
     hugo new blog/some-slug/index.md
+
+## TODO
+
+* Fix `mainCtaUrl: https://clubhouse.host/create-group` to point to new domain.
+* Fix `https://phillyelixir.clubhouse.host` to point to new domain.
