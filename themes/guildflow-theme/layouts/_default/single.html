@@ -1,6 +1,30 @@
 {{ define "main" }}
 <article class="prose prose-marketing max-w-screen-md m-auto">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <p class="text-gray-500">{{ .Description }}</p>
+    <div class="md:text-xl">
+        {{ .Content }}
+    </div>
 </article>
+
+<div class="">
+
+
+    <h3>Hey, thanks for reading!</h3>
+
+    <div>
+
+        <img src="" alt="">
+
+    </div>
+
+
+    <p>Alex Hillman I am always thinking about the intersection of people, relationships, trust and business. I
+        founded
+        Indy Hall in 2006, making us one of oldest fully independent coworking communities in the world. This site is
+        packed
+        with the lessons and examples I’ve learned along the way. You can find me on Twitter, too! 🐦 Say hi.</p>
+
+</div>
+
 {{ end }}

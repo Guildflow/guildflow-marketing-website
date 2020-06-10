@@ -1,4 +1,7 @@
-# Privacy Policy
+---
+title: Privacy Policy
+layout: "single-basic"
+---
 
 Our policy is still in-development during [public alpha](/public-alpha).
 

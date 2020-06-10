@@ -1,5 +1,6 @@
 ---
 title: Contact
+layout: "single-basic"
 ---
 
 Send email to <zorn@clubhouse.host> with any and all questions.

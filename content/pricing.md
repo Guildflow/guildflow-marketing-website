@@ -1,4 +1,7 @@
-# Pricing
+---
+title: Pricing
+layout: "single-basic"
+---
 
 Pricing info is not available during [public alpha](/public-alpha).
 

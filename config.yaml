@@ -22,3 +22,7 @@ menu:
     - name: Contact
       url: /contact/
       weight: 60
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

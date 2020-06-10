@@ -1,4 +1,7 @@
-# Public Alpha
+---
+title: Public Alpha
+layout: "single-basic"
+---
 
 The platform is still in-development but available now as a Public Alpha. This means many features are incomplete and probably broken. Users should expect things to change, sometimes in breaking ways, and know the site still lacks production-acceptable backup and export systems.
 
