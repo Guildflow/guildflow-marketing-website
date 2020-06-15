@@ -1,7 +1,8 @@
 baseURL: "https://guildflow.com/"
 languageCode: "en-us"
 title: "Guildflow"
-
+name: "Guildflow"
+copyright: "Zorn Labs LLC"
 theme: "guildflow-theme"
 params:
   author: Mike Zornek

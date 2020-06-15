@@ -6,6 +6,7 @@ To run the site locally use:
 
     hugo server --disableFastRender
 
+    hugo server --disableFastRender --buildDrafts --buildFuture
 To make a new post
 
     hugo new blog/some-slug/index.md

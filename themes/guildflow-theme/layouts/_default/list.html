@@ -1,10 +1,15 @@
 {{ define "main" }}
-BLOG
-{{ range .Pages }}
-<ol>
-    <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-</ol>
-{{ end }}
+
+<section class="prose prose-marketing max-w-screen-md m-auto">
+    <h1 class="m-0 p-0">Recent Blog Posts</h1>
+
+    <p><a href="/blog/index.xml">Subscribe to the blog via RSS.</a></p>
+
+    {{ range .Pages }}
+    <h3 class="m-0 p-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <div class="text-gray-800">{{ .Description }}</div>
+    <p class="italic text-gray-400">Posted on <time>{{ .Date.Format "Jan 2, 2006" }}</time></p>
+    {{ end }}
+</section>
+
 {{ end }}

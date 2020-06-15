@@ -1,9 +1,14 @@
 ---
 title: Meetup Privacy Done Right Using Guildflow
+date: 2020-06-22T11:00:00-04:00
 description: Take some time to consider the long term implications about the meetup tools you are using. Learn how Guildflow is raising the bar when it comes to group and member privacy.
 images:
   - blog/meetup-privacy-done-right-using-guildflow/thumb.jpg
 ---
+
+VIDEO
+
+**Video Transcript**
 
 Hi everyone my name is Mike Zornek and I am the developer behind Guildflow.
 
@@ -40,5 +45,3 @@ Guildflow is still in development but available as a public alpha.
 We encourage people who would like to hear more about its continued progress to join our [mailing list](/newsletter) or follow our [blog RSS feed](#). You can also follow us on social media at [@guildflow on Twitter](https://twitter.com/guildflow) or [@guildflow on Micro.blog](https://micro.blog/guildflow). 
 
 Thanks for watching and best of luck with your meetup.
-
-<p class="photo-credit">Photo by <a href="https://unsplash.com/@mjaleo">Michael Aleo</a>.</p>
