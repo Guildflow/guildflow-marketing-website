@@ -1,7 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: something short and tweet like
 date: {{ .Date }}
-draft: true
+description: something short and tweet like
+images:
+  - blog/title/thumb.jpg
 ---
 
+Content
