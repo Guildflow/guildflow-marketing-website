@@ -1,36 +1,24 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1
 jobs:
-  build1:
-    executor:
-      name: node/default
-      tag: "10.4"
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-      - run: npm run test
-  build2:
+  build:
     docker:
+      - image: cimg/node:14.4
       - image: cibuilds/hugo:0.72
-    working_directory: ~/project
     steps:
-      - checkout
-      - run:
-          name: "Run Hugo"
-          command: HUGO_ENV=production hugo --verbose
-      - run:
-          name: "Test Website"
-          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
-      - add_ssh_keys
-      - run:
-          name: "Add HostKeys"
-          command: echo $HOSTKEY1 >> ~/.ssh/known_hosts && echo $HOSTKEY2 >> ~/.ssh/known_hosts && echo $HOSTKEY3 >> ~/.ssh/known_hosts
-      - run:
-          name: "Install rsync"
-          command: apt update && apt-get --yes install rsync
-      - deploy:
-          name: "Deploy"
-          command: rsync -vaz --delete ~/project/public/ zorn@45.79.149.225:/var/www/html/guildflow.com/public_html/
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+
+# version: 2.1
+# orbs:
+#   node: circleci/node@3.0
+# jobs:
+#   build:
+#     executor:
+#       name: node/default
+#       tag: "14.4"
+#     steps:
+#       - checkout
+#       - node/with-cache:
+#           steps:
+#             - run: npm install
+#       - run: npm run test
