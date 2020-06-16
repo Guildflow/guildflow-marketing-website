@@ -1,9 +1,10 @@
 version: 2.1
+orbs:
+  node: circleci/node@3.0.0
 jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.72
-      - image: cibuilds/node:14.4.0
     working_directory: ~/project
     steps:
       - checkout
