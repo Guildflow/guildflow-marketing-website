@@ -2,10 +2,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:14.4
       - image: cibuilds/hugo:0.72
+      - image: cimg/node:14.4
     steps:
-      - checkout # check out the code in the project directory
+      - checkout
       - run: npm install
       - run:
           name: "Run Hugo"
