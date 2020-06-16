@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.72
-      - image: cibuilds/node
+      - image: circleci/node
     working_directory: ~/project
     steps:
       - checkout
