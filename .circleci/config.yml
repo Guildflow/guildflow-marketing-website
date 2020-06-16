@@ -3,16 +3,9 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.72
-      - image: circleci/node
     working_directory: ~/project
     steps:
       - checkout
-      - run:
-          name: "Install postcss-cli"
-          command: npm install -g postcss-cli
-      - run:
-          name: "Install autoprefixer"
-          command: npm install -g autoprefixer
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo --verbose
