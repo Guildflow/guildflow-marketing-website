@@ -14,7 +14,7 @@ jobs:
       - image: cimg/base:2020.05
     steps:
       - checkout
-      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full
+      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full zlib1g-dev
       - run: sudo gem install html-proofer --no-document
       - install_hugo:
           version: "0.72.0"
