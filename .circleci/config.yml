@@ -14,8 +14,15 @@ jobs:
       - image: cimg/base:2020.05
     steps:
       - checkout
-      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full zlib1g-dev
+      - run: curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full nodejs zlib1g-dev
       - run: sudo gem install html-proofer --no-document
       - install_hugo:
           version: "0.72.0"
-      - run: echo "hello world"
+      - run: npm install
+      - run:
+          name: "Run Hugo"
+          command: HUGO_ENV=production hugo --verbose
+      - run:
+          name: "Test Website"
+          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
