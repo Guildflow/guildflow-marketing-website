@@ -1,29 +1,21 @@
 version: 2.1
+commands:
+  install_hugo:
+    description: "Install the hugo binary."
+    parameters:
+      version:
+        type: string
+        default: "0.72.0"
+    steps:
+      - run: wget https://github.com/gohugoio/hugo/releases/download/v<< parameters.version >>/hugo_extended_<< parameters.version >>_Linux-64bit.tar.gz && tar -xzf hugo_extended_<< parameters.version >>_Linux-64bit.tar.gz && sudo mv hugo /usr/bin/hugo && rm hugo_extended_<< parameters.version >>_Linux-64bit.tar.gz LICENSE README.md
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.72
-      - image: cimg/node:14.4
+      - image: cimg/base:2020.05
     steps:
       - checkout
-      - run: npm install
-      - run:
-          name: "Run Hugo"
-          command: HUGO_ENV=production hugo --verbose
-      - run:
-          name: "Test Website"
-          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
-# version: 2.1
-# orbs:
-#   node: circleci/node@3.0
-# jobs:
-#   build:
-#     executor:
-#       name: node/default
-#       tag: "14.4"
-#     steps:
-#       - checkout
-#       - node/with-cache:
-#           steps:
-#             - run: npm install
-#       - run: npm run test
+      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full
+      - run: sudo gem install html-proofer --no-document
+      - install_hugo:
+          version: "0.72.0"
+      - run: echo "hello world"
