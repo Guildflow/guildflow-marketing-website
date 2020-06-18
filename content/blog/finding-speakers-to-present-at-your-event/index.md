@@ -2,6 +2,7 @@
 title: "Finding Speakers to Present at Your Event"
 date: 2020-06-24T11:00:00-04:00
 description: A few ideas to help you keep your stress low and your speaker confirmations flowing.
+draft: true
 ---
 
 Helping to organize a meetup group can be extremely rewarding. I've been running various groups for over 10 years now and I only regret not getting starting sooner. Still, there is not much to love in the minutia of monthly tasks to keep everything going. 

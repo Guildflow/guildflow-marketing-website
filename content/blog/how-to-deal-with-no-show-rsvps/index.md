@@ -2,6 +2,7 @@
 title: "How to Deal With No Show RSVPs"
 date: 2020-06-26T11:00:00-04:00
 description: Some pointers on how to improve your RSVP accuracy and regain better attendee estimates.
+draft: true
 ---
 
 Nothing can be more exciting for a new group organizer than seeing a bunch of "Yes" RSVPs fly in as events are posted to the group calendar. Then the day comes, you've picked a venue that can hold the 50 people, ordered food that can feed the 50 people and then 20 people actually show up. It can feel demoralizing and sadly it's all too common amongst meetup groups.

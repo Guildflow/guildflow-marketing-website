@@ -2,6 +2,7 @@
 title: "What Makes a Great Venue for Your Meetup Group and How to Find It"
 date: 2020-06-25T11:00:00-04:00
 description: In this post I'll give you a checklist to help you when picking a venue for your next event.
+draft: true
 ---
 
 One of the larger blockers you'll encounter when starting up a group is, **where are we going to meet?** Finding any venue can be tricky. Finding a great venue requires dedication and has a lot of things to consider. In this post I'll give you a checklist to help you when picking a venue for your next event.

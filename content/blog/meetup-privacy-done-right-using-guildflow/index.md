@@ -1,12 +1,12 @@
 ---
 title: Meetup Privacy Done Right Using Guildflow
-date: 2020-06-16T11:00:00-04:00
+date: 2020-06-18T11:00:00-04:00
 description: Take some time to consider the long term implications about the meetup tools you are using. Learn how Guildflow is raising the bar when it comes to group and member privacy.
 images:
   - blog/meetup-privacy-done-right-using-guildflow/thumb.jpg
 ---
 
-VIDEO
+<iframe src="https://player.vimeo.com/video/428109564" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 **Video Transcript**
 
