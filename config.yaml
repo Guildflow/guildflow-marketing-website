@@ -8,7 +8,7 @@ params:
   author: Mike Zornek
   description: Guildflow allows meetup organizers to create a modern group website that respects the data and privacy rights of its members.
   mainCtaTitle: "Create Group"
-  mainCtaUrl: https://clubhouse.host/create-group
+  mainCtaUrl: https://manager.guildflow.com/create-group
 menu:
   main:
     - name: Features
