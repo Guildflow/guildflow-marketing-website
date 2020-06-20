@@ -21,7 +21,7 @@ menu:
       url: /blog/
       weight: 40
     - name: FAQ
-      url: /faq/
+      url: /frequently-asked-questions/
       weight: 50
     - name: Contact
       url: /contact/

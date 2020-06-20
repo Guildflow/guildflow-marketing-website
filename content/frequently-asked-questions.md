@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 description: Common questions and answers about Guildflow.
 layout: "single-basic"
+aliases: /faq/
 ---
 
 ## What makes Guildflow special?
