@@ -1,8 +1,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
 <title>{{ block "title" . }}
+    {{ if .IsHome }}
+    {{- .Title }}
+    {{ else }}
     {{- .Title }} - {{ .Site.Title -}}
+    {{ end }}
     {{ end }}</title>
+
 <meta name="description" content="
 {{- with .Page.Description -}}
 {{ . }} 
