@@ -1,8 +1,7 @@
 ---
 title: "How to Brainstorm Presentation Topics for Your Events"
-date: 2020-06-23T11:00:00-04:00
+date: 2020-06-23T10:00:00-04:00
 description: What do you do when no one submits a presentation for the monthly meeting? You make it work and plan something yourself.
-draft: true
 ---
 
 In my experience running meetup groups for over a decade, the social aspect or hallway conversations can sometimes be the most beneficial aspects of an event yet to hold **an event without a speaker or topic can usually lead to an empty RSVP list**. 
