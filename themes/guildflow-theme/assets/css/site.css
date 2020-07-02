@@ -25,7 +25,7 @@
 
 .prose ul,
 .prose ol {
-  @apply ml-8 mb-2;
+  @apply ml-8 mb-4;
 }
 
 .prose ul li {
