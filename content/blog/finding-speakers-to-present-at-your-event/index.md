@@ -1,8 +1,7 @@
 ---
 title: "Finding Speakers to Present at Your Event"
-date: 2020-06-24T11:00:00-04:00
+date: 2020-07-02T09:00:00-04:00
 description: A few ideas to help you keep your stress low and your speaker confirmations flowing.
-draft: true
 ---
 
 Helping to organize a meetup group can be extremely rewarding. I've been running various groups for over 10 years now and I only regret not getting starting sooner. Still, there is not much to love in the minutia of monthly tasks to keep everything going. 
@@ -27,15 +26,11 @@ I highly recommend speakers practice their talk before presenting to a group. It
 
 ## Recruit Speakers Who Have Presented at Recent Events or Conferences
 
-If someone has done a presentation once, it's usually **much easier to present it a second time**. Take advantage of this and browse other meetups or conferences in your area or even just outside of your area and ask recent presenters if they might be interested in doing a presentation for your group. 
-
-Bringing people in from out of town can cost a little bit extra (I would recommend trying to cover their travel and hotel costs) but can also give that event a little extra prestige. 
+If someone has done a presentation once, it's usually **much easier to present it a second time**. Take advantage of this and browse other meetups or conferences in your area or even outside of your area (since many meetups are virtual these days) and ask recent presenters if they might be interested in doing a presentation for your group. 
 
 ## Post Speaker Openings on Your Social Media Accounts and Blogs
 
 In addition to using social channels to help spread the word about the speaker openings it's also a great subtext for reminding people of the group existence (so they may attend) as well as your efforts into helping to run the group.
-
-Having been one of the organizers for my local iOS development group, word quickly spreads around town about this and you are often approached with questions and related opportunities. **Don't be shy about promoting you and your group.**
 
 ## Reach Out Months in Advance
 
