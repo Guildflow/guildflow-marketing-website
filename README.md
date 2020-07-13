@@ -9,4 +9,4 @@ To run the site locally use:
     hugo server --disableFastRender --buildDrafts --buildFuture
 To make a new post
 
-    hugo new blog/say-hello-to-guildflow/index.md
+    hugo new blog/video-tour-of-new-password-tools-and-editable-member-profiles/index.md
