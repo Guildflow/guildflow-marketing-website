@@ -78,6 +78,13 @@
         <a href="/privacy" class="font-medium text-gray-900 underline">Privacy Policy</a>
     </p>
 
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const utm_campaign = urlParams.get('utm_campaign')
+        document.getElementById("fieldjyndtr").value = utm_campaign;
+    </script>
+
     <div class="prose prose-marketing">
 
         <h2>Conclusion</h2>
