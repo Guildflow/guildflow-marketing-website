@@ -1,6 +1,5 @@
 ---
-title: Newsletter
-description: The Guildflow newsletter is sent no more than once a month which includes product updates as well as links and resources relevant to meetup organizers.
+title: Guildflow Announcements
+description: Guildflow Announcements is a monthly email which lets people know about new features and related improvements to Guildflow.
 layout: "newsletter"
 ---
-
