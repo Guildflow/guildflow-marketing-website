@@ -7,22 +7,13 @@ theme: "guildflow-theme"
 params:
   author: Mike Zornek
   description: Guildflow allows meetup organizers to create a modern group website that respects the data and privacy rights of its members.
-  mainCtaTitle: "Create Group"
-  mainCtaUrl: https://manager.guildflow.com/create-group
+  mainCtaTitle: "Join Waitlist"
+  mainCtaUrl: /newsletter
 menu:
   main:
-    - name: Features
-      url: /features/
-      weight: 10
-    - name: Pricing
-      url: /pricing/
-      weight: 20
     - name: Blog
       url: /blog/
       weight: 40
-    - name: FAQ
-      url: /frequently-asked-questions/
-      weight: 50
     - name: Contact
       url: /contact/
       weight: 60
