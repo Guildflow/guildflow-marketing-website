@@ -10,5 +10,3 @@ To run the site locally use:
 To make a new post
 
     hugo new blog/video-tour-of-new-password-tools-and-editable-member-profiles/index.md
-
-Test no deploy 12:22 PM
