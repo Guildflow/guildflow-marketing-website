@@ -11,7 +11,7 @@ commands:
 jobs:
   build:
     branches:
-      only: "master"
+      only: "main"
     docker:
       - image: cimg/base:2020.05
     steps:
