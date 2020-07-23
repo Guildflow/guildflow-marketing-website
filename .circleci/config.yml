@@ -11,21 +11,39 @@ commands:
 jobs:
   build:
     docker:
-      - image: cimg/base:2020.05
+      - image: cimg/node:14.5
     steps:
       - checkout
-      - run: curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-      - run: sudo apt-get update && sudo apt-get install -y rsync ruby-full nodejs zlib1g-dev
-      - run: sudo gem install html-proofer --no-document
       - install_hugo:
           version: "0.72.0"
       - run: npm install
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo --verbose
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project/public
+
+  test:
+    docker:
+      - image: cimg/base:2020.05
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: sudo apt-get update && sudo apt-get install -y ruby-full zlib1g-dev
+      - run: sudo gem install html-proofer --no-document
       - run:
           name: "Test Website"
-          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+
+  deploy:
+    docker:
+      - image: cimg/base:2020.05
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: sudo apt-get update && sudo apt-get install -y rsync
       - add_ssh_keys
       - run:
           name: "Add HostKeys"
@@ -33,3 +51,17 @@ jobs:
       - deploy:
           name: "Deploy"
           command: rsync -vaz --delete ~/project/public/ zorn@45.79.149.225:/var/www/html/guildflow.com/public_html/
+
+workflows:
+  build-test-deploy:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
