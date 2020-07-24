@@ -4,6 +4,36 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.7.2 -- July 24, 2020
+
+### Known Bugs:
+
+* There is a new behavior where a group admin will see a suggestion about giving prospective members a link to the Membership Application but this page is currently behind a sign in wall for private groups.
+
+### Group Site
+
+* [FIXED] When an `Event` is deleted all of the children `Reservations` are now also deleted.
+* [CHANGED] While editing an Event you can now choose a duration of up to 8 hours. This should accommodate my friends at Philly CocoaHeads who run a long Side Project Saturday event that spans many hours.
+* [CHANGED] Sign Up and Reset Password links on the Sign In page are now underlined.
+* [CHANGED] All "prose" links are now the default text color and not a shade of blue.
+* [FIXED] For sections of the group site that require authentication (like the Members section) I reverted a recent change that sent a `401 Forbidden` HTTP response to send a `302 Redirect` HTTP response once again. This `302 Redirect` will redirect to the Sign In page with flash message about the required authentication. `401` is probably a more truthy HTTP response but you technically can't redirect a user with a `401` and I don't want to render the sign in form in a `401` response. 
+* [CHANGED] All pages should now have meaningful page titles. In addition I've setup an internal warning during development and testing that should throw an error if no custom  title is present.
+* [FIXED] The Sign In page now properly displays the group name and not the static text "Philly Movie Club". Thanks Travis!
+* [ADDED] During the new Group onboarding process the owner is now automatically signed in.
+* [REMOVED] Temporally removed the tint color UI picker from the group onboarding flow since we do not currently honor it and will most likely be prioritizing other features for now.
+* [ADDED] For a new group with no members (beside the owner) we now display a "Group Admin Suggestion" informing how to invite people to fill out the Membership Application. Note: This is an incorrect behavior for Private groups. See Known Bugs above.
+* [ADDED] When there are no upcoming events we now show a "Group Admin Suggestion" with a new event link. 
+* [ADDED] An event now has a field for "Video Chat URL". This URL will be shared with RSVPed members only and never to the general public.
+* [ADDED] Added a few links that are displayed only for signed in admins that will allow them to quickly jump the edit page of an event from the group website to the admin section. In time I plan to remove the dedicated "admin section" in favor of more inline admin tools within the group site frame but this will help in the meantime.
+* [ADDED] The Account Tools links in the Member Profile now include an "Edit Avatar Photo" link which points to Gravatar. 
+* [ADDED] We now send an email to people when they submit a Membership Application explaining how the approval process works. Also improved website language about this.
+* [ADDED] The Group owner will now be sent a notification when a new Membership Application is ready for review.
+* [CHANGED] Updated the copy for the accepted and declined emails that are sent when a Membership Application is finalized.
+
+### Behind the Scenes Stuff
+
+* [CHANGED] Updated various node packages to address security vulnerabilities. 
+
 ## 0.6.2 -- July 10, 2020
 
 ### Known Bugs
