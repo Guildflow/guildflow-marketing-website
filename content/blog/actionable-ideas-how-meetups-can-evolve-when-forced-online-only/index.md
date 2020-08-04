@@ -1,12 +1,12 @@
 ---
 title: "Actionable Ideas How Meetups Can Evolve When Forced Online Only"
 date: 2020-08-04T09:40:09-04:00
-description: Today I recorded some thoughts regarding the challenges meetups are facing as they been forced online and ideas how those those challenges can be met.
+description: Today I recorded some thoughts regarding the challenges meetups are facing as they've been forced online and ideas how those challenges can be met.
 images:
   - blog/actionable-ideas-how-meetups-can-evolve-when-forced-online-only/thumb.jpeg
 ---
 
-Today I recorded some thoughts regarding the challenges meetups are facing as they been forced online and ideas how those those challenges can be met.
+Today I recorded some thoughts regarding the challenges meetups are facing as they've been forced online and ideas how those challenges can be met.
 
 <p><iframe src="https://player.vimeo.com/video/444547122" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
 
