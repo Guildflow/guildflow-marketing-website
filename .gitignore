@@ -2,9 +2,6 @@
 /public/
 /resources/_gen/
 
-# Generated files for NPM install
-/node_modules/
-
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
