@@ -1,6 +1,6 @@
 # COLLABORATE
 
-Thanks for you interest in improving the [Guildflow website](https://guildflow.com/).
+Thanks for your interest in improving the [Guildflow website](https://guildflow.com/).
 
 The following is a guide on how to build the site locally to test changes.
 
