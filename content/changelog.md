@@ -4,6 +4,39 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.8.0 -- August 11, 2020
+
+* [ADDED] During new group onboarding, the group owner must now agree to the terms of service and privacy policy. These are not published (yet) but will be soon™. 
+* [CHANGED] Final form validation at the end of group onboarding now has better error messaging display.
+* [ADDED] There is a new Settings section for a signed in member.
+* [ADDED] You can now "Update Policy Agreement Status" via Settings. This will allow people who participate in the alpha or otherwise ended up with a member account but did not agree to the upcoming Terms of Service and Privacy Policy to do so. In the future this form could also be used to agree to any updated Guildflow account agreements.
+* [FIXED] Fixed a bug where the group onboarding would fail due to the recently removed tint color setting.
+* [FIXED] Fixed an issue where a group with a subdomain that included a hyphen would not process custom database migrations properly.
+* [FIXED] Fixed an issue where a non-shared RSVP status was leaking on the home page for signed in users.
+* [CHANGED] Renamed the `/admin/` section to `/old-admin/` in advance of being removed. The old "Admin Tools" link is now labeled "Manage Group" and the "Old Admin Tools" themselves linked on that page.
+* [REMOVED] The `/old-admin/` tools for **Member** management have been removed in favor of newer tools.
+* [ADDED] Added a new `/admin/` built with the main group page style.
+* [ADDED] Added a section to the new `/admin/` that allows an organizer to view and create **Invite** links that can be manually shared with people who should be allowed to join the group. An **Invite** link will expire 7 days after creation and can be marked as expired early if needed. While we encourage the use of **Membership Applications** (which will have been adjusted to use these new **Invite** links) for public groups, for private groups which do not publish a **Membership Application**, these **Invite** links are more well suited.
+* [REMOVED] There is no longer a concept of marking a member account as "requiring a new password". This was an old behavior to help with **Member** accounts that were created upon the acceptance of a **Membership Application** but we are migrating **Membership Application** to send **Invite** links instead. One primary reason for this is to allow any new members to review our privacy policy before an account is created in their name.
+* [CHANGED] Content links will now render with a purple `:visited` color, a red `:active` color and a light gray `:hover` color. 
+* [CHANGED] The reset password flow now honors the privacy of a group by suppressing normal site chrome when rendering those forms, if the group is marked as private.
+* [CHANGED] Formally renamed the old "Invite Request" to "Membership Application" both in the UI and internally.
+* [CHANGED] An accepted membership application will now generate an invite link instead of generating a member with a temporary password. This invite link will be sent via email.
+* [CHANGED] The user interface for managing **Membership Applications** now lives within the group site's "Manage Group" section and has been removed from the old admin tools.
+* [REMOVED] The **Photos** section of the old admin tools has been removed. Photos as a feature is currently on hold.
+* [ADDED] An admin can now reopen a "Declined" **Membership Application**.
+* [ADDED] There is a new "Attention" notice on the Manage Group page for admins when there are open membership applications to review.
+* [CHANGED] We now show the Membership Application in the site navigation for signed in members as well as non-signed in visitors. For a signed in member the page will render instructions on how to share the **Membership Application** link instead of the form itself.
+* [CHANGED] Some copy about invites and membership applications is now custom depending on if the group is public or private, as membership applications are only available to a public group.
+* [ADDED] Added a placeholder page for "Notifications Settings" where (in the future) we can allow user to opt in and out of non-system notification emails.
+
+### Behind the Scenes Stuff
+
+* [ADDED] Added more unit tests to verify security issues around user provided Markdown content. No behavior changes.
+* [CHANGED] Started internal templated updates to help make styles more consistent and easier to create.
+* [ADDED] Created more centralized style tools around data-based tables and data-based record display which should help improve the speed and consistency in how we build out the new Manage Group section.
+* [CHANGED] Version bumps to `npm` modules, including updates to TailwindCSS and TailwindUI.
+
 ## 0.7.2 -- July 24, 2020
 
 ### Known Bugs:
