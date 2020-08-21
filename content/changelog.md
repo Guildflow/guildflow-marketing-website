@@ -4,6 +4,27 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.9.1 -- August 21, 2020
+
+* [CHANGED] No longer using a relative positioning of the "Manage Group" link in the navigation area. This lets us remove a `z-20` adjustment to the account menu popup. The hope is this changes fixes a menu flash on page load issue observed using Firefox (but is hard to replicate during local development since the assets seem to load differently).  
+* [CHANGED] **Group Settings** is now available under "Manage Group" and the old admin version has been removed.
+* [CHANGED] An admin can now browse, create, edit and delete **Events** via the Manage Group section.
+* [REMOVED] The old admin tools have now fully been removed.
+* [CHANGED] While browsing the public event detail page an admin will see an "Edit as Admin" link near the title. This will allow an admin to jump right to the edit event form in Manage Group and upon saving the changes, is taken right back to the public event detail page.
+* [FIXED] When previously editing an event's starts on date the form did not show the current date value properly, this is fixed. 
+* [CHANGED] Like before, an event with no start date is unlisted on the public event index. If however someone tries to guess an event url we now also render a 404 experience for such unlisted events.
+* [ADDED] Via Settings a signed in member can now export their member account data in JSON format. This export includes basic account info, RSVP info and a membership application if one was related to the account creation (through an invite link).
+* [ADDED] We've added a Settings link to the footer for signed in members to better match the account menu at the top of the page.
+* [CHANGED] The footer no longer uses a dark gray banner and instead now uses a lighter gray border to help with some separation but at the same time not making the bottom of the page too heavy.
+* [CHANGED] We now explicitly solicit Guildflow feedback in the footer with a direct link to `zorn@guildflow.com`.
+* [ADDED] Via Settings a signed in member can now delete their account. This is a irreversible action and the copy on the utility page says so. Currently a group owner can not use this.
+* [CHANGED] Related to the deletion of a member some event reservations which are marked as shared can no longer show a name since the member account they link to is gone. 
+* [ADDED] Via Settings a signed in member can edit their Group Export Setting, which is an on/off toggle (defaults to on) that would include their member info in any Group Export done by the group admins. 
+* [ADDED] Via Manage Group a group admin can now run the Group Export. This exports all the group data (in JSON) as well as member data that was marked as exportable via the individual member setting for Group Export.
+* [FIXED] There was a deployment issue during `0.9.0` where some of the new Manage Group CSS was being purged. This has been addressed with a temporary work around.
+* [FIXED] When a member was editing their Group Export Setting the app was mistakenly trying to render a template during a redirect. The bug has been fixed.
+* [FIXED] To avoid an name collision with the new Tailwind Typography we've renamed `prose` to `gf-prose`.
+
 ## 0.8.0 -- August 11, 2020
 
 * [ADDED] During new group onboarding, the group owner must now agree to the terms of service and privacy policy. These are not published (yet) but will be soon™. 
