@@ -17,6 +17,9 @@ menu:
     - name: Contact
       url: /contact/
       weight: 60
+    - name: Join Waitlist
+      url: /newsletter/
+      weight: 60
 markup:
   goldmark:
     renderer:

@@ -1,11 +1,10 @@
-<header class="bg-pink-500 px-2 md:px-4 py-1 text-center md:text-left md:flex md:justify-between md:items-center">
-    <a href="{{ .Site.Home.Permalink }}" class="block text-gray-100 text-4xl md:text-3xl lg:text-4xl font-bold">
-        {{ .Site.Title }}
+<header class="text-center md:text-left md:flex md:justify-between md:items-center">
+    <a href="{{ .Site.Home.Permalink }}" class="flex justify-center items-center md:block pt-2 pb-0 md:px-6 md:pt-6">
+        <img class="w-64" src=" /images/guildflow-logotype-full-color-rgb.svg" alt="Guildflow Logo">
     </a>
-    <nav class="md:my-4 md:text-right">
-        {{ range .Site.Menus.main }}<a href="{{ .URL | relURL }}"
-            class="text-gray-100 hover:text-white underline text-xl mr-2">{{ .Name }}</a>{{ end }}<a
-            href="{{ .Site.Params.mainCtaUrl }}"
-            class="link-button block md:inline bg-gray-100 rounded-lg ml-1 px-4 py-2 font-bold my-4 hover:bg-white hover:underline">{{ .Site.Params.mainCtaTitle }}</a>
+    <nav class="mr-0 md:mr-6">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}" class="underline text-xl text-gf-blue mr-2 active:text-gf-orange">{{ .Name }}</a>
+        {{ end }}
     </nav>
 </header>

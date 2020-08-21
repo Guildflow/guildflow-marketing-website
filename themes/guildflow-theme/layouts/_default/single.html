@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="prose prose-marketing max-w-screen-md m-auto">
+<article class="prose max-w-screen-md m-auto">
     <h1>{{ .Title }}</h1>
     <p class="italic text-gray-500">{{ .Description }}</p>
     <div class="mt-8 md:text-lg">
@@ -11,27 +11,27 @@
 <div class="mt-6 max-w-screen-md m-auto">
     <h1 class="mb-1 text-xl font-bold">Like what you read? Share it!</h1>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         id="share-link" href="#share-link" onclick="setClipboard('{{ .Permalink }}'); this.innerHTML='Copied!'"
         rel="noreferrer">Copy
         Link</a>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title | htmlEscape }}&via=guildflow"
         rel="noreferrer" target="_blank">Twitter</a>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         href="https://reddit.com/submit?url={{ .Permalink }}&title={{ .Title | htmlEscape }}" rel="noreferrer"
         target="_blank">Reddit</a>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" rel="noreferrer" target="_blank">Facebook</a>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         href="https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ .Title | htmlEscape }}" rel="noreferrer"
         target="_blank">HackerNews</a>
 
-    <a class="inline-block bg-pink-500 px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
+    <a class="inline-block bg-gf-orange px-2 py-1 mb-1 text-gray-100 hover:text-white hover:underline rounded"
         href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" rel="noreferrer"
         target="_blank">LinkedIn</a>
 
@@ -49,7 +49,7 @@
     </script>
 </div>
 
-<div class="mt-8 bg-gray-200 rounded-lg px-4 py-3 prose prose-marketing max-w-screen-md m-auto">
+<div class="mt-8 bg-gray-200 rounded-lg px-4 py-3 prose max-w-screen-md m-auto">
 
     <h3><img src="/images/zorn_square.jpeg" alt="Photo of Mike Zornek."
             class="hidden md:inline float-right h-36 w-36 rounded-full">Thanks for reading!</h3>
