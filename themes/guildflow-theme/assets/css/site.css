@@ -1,54 +1,54 @@
-.prose h1 {
+.gf-prose h1 {
   @apply text-4xl mb-2 font-bold leading-tight;
 }
-.prose h2 {
+.gf-prose h2 {
   @apply text-3xl mb-2 font-bold leading-tight;
 }
-.prose h3 {
+.gf-prose h3 {
   @apply text-2xl mb-2 font-bold leading-tight;
 }
-.prose h4 {
+.gf-prose h4 {
   @apply text-xl mb-2 font-bold leading-tight;
 }
 
-.prose p {
+.gf-prose p {
   @apply mb-4;
 }
 
-.prose h4 + p { 
+.gf-prose h4 + p { 
   @apply mt-0;
 }
 
-.prose a:link {
+.gf-prose a:link {
   @apply text-orange-500 underline;
 }
 
-.prose a:visited {
+.gf-prose a:visited {
   @apply text-gf-orange;
 }
 
-.prose a:focus {
+.gf-prose a:focus {
   @apply bg-gf-orange text-white;
 }
 
-.prose a:hover {
+.gf-prose a:hover {
   @apply bg-gf-orange text-white;
 }
 
-.prose a:active {
+.gf-prose a:active {
   @apply bg-gf-orange text-red-600;
 }
 
-.prose ul,
-.prose ol {
+.gf-prose ul,
+.gf-prose ol {
   @apply ml-8 mb-4;
 }
 
-.prose ul li {
+.gf-prose ul li {
   @apply list-disc;
 }
 
-.prose ol li {
+.gf-prose ol li {
   @apply list-decimal;
 }
 
