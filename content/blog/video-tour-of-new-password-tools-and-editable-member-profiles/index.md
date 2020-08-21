@@ -6,7 +6,7 @@ images:
   - blog/video-tour-of-new-password-tools-and-editable-member-profiles/thumb.jpeg
 ---
 
-<iframe src="https://player.vimeo.com/video/437957084" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+{{< vimeo 437957084 >}}
 
 On Friday, July 10th, I released version 0.6.2 of Guildflow. Big changes include:
 

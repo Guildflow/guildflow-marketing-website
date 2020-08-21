@@ -6,7 +6,7 @@ images:
   - blog/meetup-privacy-done-right-using-guildflow/thumb.jpg
 ---
 
-<iframe src="https://player.vimeo.com/video/428109564" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+{{< vimeo 428109564 >}}
 
 **Video Transcript**
 
