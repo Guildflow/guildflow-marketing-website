@@ -30,7 +30,7 @@
           From: "opacity-100 translate-y-0 sm:scale-100"
           To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       -->
-            <div data-proofer-ignore @click.away="showIntroVideo = false"
+            <div @click.away="showIntroVideo = false"
                 class="inline-block bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle max-w-5xl w-full sm:p-6"
                 role="dialog" aria-modal="true">
                 <div x-show="showIntroVideo" class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="mt-5 sm:mt-6 text-center">
                     <span class="gf-prose">
-                        <a data-proofer-ignore href="#" @click="showIntroVideo = !showIntroVideo" class=""
+                        <a href="#" @click="showIntroVideo = !showIntroVideo" class=""
                             onClick="stopVideo(); return false;">
                             Close
                         </a>
@@ -104,7 +104,7 @@
             <div
                 class="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                 <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                    <a data-proofer-ignore @click="showIntroVideo = !showIntroVideo" onClick="startVideo()"
+                    <a @click="showIntroVideo = !showIntroVideo" onClick="startVideo()"
                         class="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
                         <img class="w-full" src="images/video_thumbnail.jpeg"
                             alt="Video thumbnail showing front page of a group website." />
