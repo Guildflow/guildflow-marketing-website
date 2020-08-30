@@ -24,6 +24,6 @@
         "not dead"
     ],
     "dependencies": {
-        "@tailwindcss/ui": "^0.3.0"
+        "@tailwindcss/ui": "^0.5.0",
     }
 }
