@@ -5,6 +5,6 @@ layout: "single-basic"
 aliases: /terms/
 ---
 
-Our Terms of Service policy is still in-development during [public alpha](/public-alpha).
+Our Terms of Service policy is still in-development.
 
 If you would like to review it when it is published, please [contact us](/contact). Thanks.

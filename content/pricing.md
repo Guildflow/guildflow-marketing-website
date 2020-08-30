@@ -4,8 +4,8 @@ description: Details on the pricing options for Guildflow.
 layout: "single-basic"
 ---
 
-Pricing info is not available during [public alpha](/public-alpha).
+## $14 per month or $140 per year
 
-When the 1.0 version is released groups will require a payment subscription.
+Guildflow is currently available as a [beta release](/beta). 
 
-## [Get an email when pricing info is ready.](mailto:zorn+pricing@guildflow.com?subject=LetMeKnowPricing)
+During beta there are no required payments.

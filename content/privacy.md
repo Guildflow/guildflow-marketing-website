@@ -4,6 +4,6 @@ description: Detailed information on the kinds of user data we collect and how w
 layout: "single-basic"
 ---
 
-Our policy is still in-development during [public alpha](/public-alpha).
+Our policy is still available as a [DRAFT on GitHub](https://github.com/Guildflow/policy/blob/main/privacy.md).
 
-If you would like to review it when it is published, please [contact us](/contact). Thanks.
+Please let us know if you find it clear and acceptable.
