@@ -1,316 +1,401 @@
 {{ define "main" }}
-<div class="mt-4 mx-auto max-w-screen-xl px-4 sm:mt-6 sm:px-6">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-            <div
-                class="text-sm font-semibold uppercase tracking-wide text-gray-900 sm:text-base lg:text-sm xl:text-base">
-                Coming soon
+<div x-data="{ showIntroVideo: false }">
+
+    <div x-show="showIntroVideo" :class="{'fixed': showIntroVideo, 'hidden': !showIntroVideo }"
+        class="hidden z-10 inset-0 overflow-y-auto">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!--
+        Background overlay, show/hide based on modal state.
+  
+        Entering: "ease-out duration-300"
+          From: "opacity-0"
+          To: "opacity-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100"
+          To: "opacity-0"
+      -->
+            <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-500 opacity-75" onClick="stopVideo();"></div>
             </div>
-            <h1
-                class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gf-orange sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
-                Own your meetup.
-            </h1>
-            <p class="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Build a website for your meetup group that honors the privacy rights of its
-                members and won't hold the group data hostage.
-            </p>
-            <div class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <p class="text-base font-medium text-gray-900">
-                    Sign up to get notified when Guildflow is ready.
+
+            <!-- This element is to trick the browser into centering the modal contents. -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>&#8203;
+            <!--
+        Modal panel, show/hide based on modal state.
+  
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+            <div @click.away="showIntroVideo = false"
+                class="inline-block bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle max-w-5xl w-full sm:p-6"
+                role="dialog" aria-modal="true">
+                <div x-show="showIntroVideo" class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;">
+                    <iframe id="introvideo" src="https://player.vimeo.com/video/453068605"
+                        style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0"
+                        allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="mt-5 sm:mt-6 text-center">
+                    <span class="gf-prose">
+                        <a href="#" @click="showIntroVideo = !showIntroVideo" class="" onClick="stopVideo();">
+                            Close
+                        </a>
+                    </span>
+                </div>
+                <script>
+                    function startVideo() {
+                        var iframe = document.querySelector('iframe');
+                        var player = new Vimeo.Player(iframe);
+                        player.play()
+                    }
+                    function stopVideo() {
+                        var iframe = document.querySelector('iframe');
+                        var player = new Vimeo.Player(iframe);
+                        player.pause()
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mt-4 mx-auto max-w-screen-xl px-4 sm:mt-6 sm:px-6">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                <div
+                    class="text-sm font-semibold uppercase tracking-wide text-gray-900 sm:text-base lg:text-sm xl:text-base">
+                    Coming soon
+                </div>
+                <h1
+                    class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gf-orange sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
+                    Own your meetup.
+                </h1>
+                <p class="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                    Build a website for your meetup group that honors the privacy rights of its
+                    members and won't hold the group data hostage.
                 </p>
-                <!-- Because `subForm` is used in the footer as well, this might cause unexpected behavior. -->
-                <!-- That said, I don't know how I could have the script look for another id. -->
-                <form id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post"
-                    data-id="2BE4EF332AA2E32596E38B640E905619977C82786A703687953383B5DB3B664280FC7205BAF470983C359E59707E91C711ABCFB59662D59E6C7AF9DCA8F11EDD"
-                    class="mt-3 sm:flex js-cm-form">
-                    <input aria-label="Email" id="fieldEmail" name="cm-shdjrk-shdjrk" required
-                        class="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1 js-cm-email-input"
-                        placeholder="Enter your email" />
-                    <input type="hidden" id="fieldjyndtr" name="cm-f-jyndtr" value="homepage" />
-                    <button type="submit"
-                        class="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gf-orange shadow-sm hover:bg-orange-400 focus:outline-none focus:shadow-outline active:bg-orange-400 transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto js-cm-submit-button">
-                        Notify me
-                    </button>
-                </form>
-                <script src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+                <div class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+                    <p class="text-base font-medium text-gray-900">
+                        Sign up to get notified when Guildflow is ready.
+                    </p>
+                    <!-- Because `subForm` is used in the footer as well, this might cause unexpected behavior. -->
+                    <!-- That said, I don't know how I could have the script look for another id. -->
+                    <form id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post"
+                        data-id="2BE4EF332AA2E32596E38B640E905619977C82786A703687953383B5DB3B664280FC7205BAF470983C359E59707E91C711ABCFB59662D59E6C7AF9DCA8F11EDD"
+                        class="mt-3 sm:flex js-cm-form">
+                        <input aria-label="Email" id="fieldEmail" name="cm-shdjrk-shdjrk" required
+                            class="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1 js-cm-email-input"
+                            placeholder="Enter your email" />
+                        <input type="hidden" id="fieldjyndtr" name="cm-f-jyndtr" value="homepage" />
+                        <button type="submit"
+                            class="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gf-orange shadow-sm hover:bg-orange-400 focus:outline-none focus:shadow-outline active:bg-orange-400 transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto js-cm-submit-button">
+                            Notify me
+                        </button>
+                    </form>
+                    <script src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 
+                </div>
             </div>
-        </div>
-        <div
-            class="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                <a href="/blog/meetup-privacy-done-right-using-guildflow/"
-                    class="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
-                    <img class="w-full" src="images/video_thumbnail.jpeg"
-                        alt="Video thumbnail showing front page of a group website." />
-                    <div class="absolute inset-0 w-full h-full flex items-center justify-center">
-                        <svg class="h-20 w-20 text-gf-orange" fill="currentColor" viewBox="0 0 84 84">
-                            <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
-                            <path
-                                d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                        </svg>
-                    </div>
-                </a>
+            <div
+                class="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                    <a @click="showIntroVideo = !showIntroVideo" onClick="startVideo()"
+                        class="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
+                        <img class="w-full" src="images/video_thumbnail.jpeg"
+                            alt="Video thumbnail showing front page of a group website." />
+                        <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+                            <svg class="h-20 w-20 text-gf-orange" fill="currentColor" viewBox="0 0 84 84">
+                                <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
+                                <path
+                                    d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="benefits" class="mt-12 py-8 bg-gray-100">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-            <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                Why choose Guildflow to run your group?
-            </h1>
-        </div>
-        <div class="mt-6 md:mt-10">
-            <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-                <li class="mt-4 md:mt-0">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
-                                <img class="h-8 w-8" src="/images/icons/noun_Data_2921750.svg" alt="ADD ALT icon">
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
-                                Unlike Meetup.com,
-                            </h5>
-                            <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
-                                You own your group. If you choose not to renew your subscription, we won't sell your
-                                group to the first person who shows up with a working credit card number.</p>
-
-                            <p class="text-base sm:text-xl leading-6 text-gray-900">In fact, Guildflow has a
-                                dedicated system to allow you to export and migrate your data off Guildflow should you
-                                find a
-                                better solution for your group as it grows and evolves. No hard feelings.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="mt-4 md:mt-0">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
-                                <img class="h-8 w-8" src="/images/icons/noun_tracker_1315948.svg" alt="ADD ALT icon">
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
-                                Unlike Facebook Events,
-                            </h5>
-                            <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
-                                Guildflow will never sell your group data or use it to power an advertising platform.
-                            </p>
-
-                            <p class="text-base sm:text-xl leading-6 text-gray-900">Why let involvement in a
-                                sensitive group, like a divorce or substance-abuse support group, influence the ads your
-                                household sees.</p>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="mt-4 md:mt-0">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
-                                <img class="h-8 w-8" src="/images/icons/noun_Privacy_2399381.svg" alt="ADD ALT icon">
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
-                                Unlike Meetup.com and Facebook Events,
-                            </h5>
-                            <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
-                                Member details, including RSVP status, are never shared on the public internet. </p>
-
-                            <p class="text-base sm:text-xl leading-6 text-gray-900">Why should a current boss be able
-                                to discover someone attending a resume workshop. With Guildflow, members have
-                                meaningful privacy controls.</p>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="mt-4 md:mt-0">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
-                                <img class="h-8 w-8" src="/images/icons/noun_website_375624.svg" alt="ADD ALT icon">
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
-                                Unlike Meetup.com and Facebook Events,
-                            </h5>
-                            <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
-                                Your group website does not live in the shell of a third-party provider.</p>
-
-                            <p class="text-base sm:text-xl leading-6 text-gray-900">The focus is on your group, not the
-                                tools running it. You can even use a custom domain that you own and
-                                control.</p>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="">
-            <h1
-                class="mt-8 mb-4 text-xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-2xl sm:leading-10 lg:text-center">
-                And all of the standard meetup tools you'd expect!
-            </h1>
-            <div class="max-w-screen-md mx-auto text-xl">
-                <ul class="list-disc px-6">
-                    <li>Build and share an <strong>event calendar</strong> with RSVPs.</li>
-                    <li>Limit <strong>Video Chat URLs</strong> sharing to RSVPed members.</li>
-                    <li>Provide a <strong>membership directory</strong> so people can learn more about each other.</li>
-                    <li>Create a <strong>custom Membership Application</strong> to capture background info before
-                        letting unverified people get group
-                        access.</li>
-                    <li>Connect with other tools via a <strong>modern GraphQL API</strong>.</li>
-                </ul>
-            </div>
-            <h3
-                class="mt-8 mb-4 text-lg leading-8 font-bold tracking-tight text-gray-900 sm:text-xl sm:leading-10 lg:text-center gf-prose">
-                Join the <a href="/newsletter/">announcement email list</a> get notified when Guildflow is ready.
-            </h3>
-        </div>
-    </div>
-</div>
-
-<div class="">
-    <div class="">
-        <div class="max-w-screen-xl mx-auto pt-12 pb-8 sm:pt-16 sm:pb-10 px-4 sm:px-6 lg:pt-8 lg:pb-12 lg:px-8">
+    <div id="benefits" class="mt-12 py-8 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h1
                     class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                    Frequently Asked Questions
+                    Why choose Guildflow to run your group?
                 </h1>
             </div>
-            <div class="mt-6 border-t-2 border-gray-100 pt-10">
-                <dl class="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <div>
-                            <dt class="text-lg leading-6 font-bold text-gray-900">
-                                Can I import my members from Meetup.com?
-                            </dt>
-                            <dd class="mt-2">
-                                <p class="text-lg leading-6 text-gray-900 mb-4">
-                                    Right now sadly, no.
-                                </p>
+            <div class="mt-6 md:mt-10">
+                <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+                    <li class="mt-4 md:mt-0">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
+                                    <img class="h-8 w-8" src="/images/icons/noun_Data_2921750.svg" alt="ADD ALT icon">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
+                                    Unlike Meetup.com,
+                                </h5>
+                                <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
+                                    You own your group. If you choose not to renew your subscription, we won't sell your
+                                    group to the first person who shows up with a working credit card number.</p>
 
-                                <p class="text-lg leading-6 text-gray-900 mb-4">
-                                    One of the main reasons I am building Guildflow is because Meetup.com does not
-                                    provide the group owner full access to the member data, including email addresses.
-                                    As such, any export would be incomplete or inaccurate.
-                                </p>
-
-                                <p class="text-lg leading-6 text-gray-900 gf-prose">
-                                    I do have some ideas on paper that might help with this in the future. If this is a
-                                    must have for your group,
-                                    please <a href="/contact">contact me</a> and let's talk.
-                                </p>
-
-
-                            </dd>
+                                <p class="text-base sm:text-xl leading-6 text-gray-900">In fact, Guildflow has a
+                                    dedicated system to allow you to export and migrate your data off Guildflow should
+                                    you
+                                    find a
+                                    better solution for your group as it grows and evolves. No hard feelings.</p>
+                            </div>
                         </div>
-                        <div class="mt-12">
-                            <dt class="text-lg leading-6 font-bold text-gray-900">
-                                Are there native iOS or Android mobile apps for Guildflow?
-                            </dt>
-                            <dd class="mt-2">
-                                <p class="text-lg leading-6 text-gray-900 mb-4">
-                                    Getting the API working is a foundational requirement for native mobile
-                                    apps. Once
-                                    the API is in a good place the creation of the mobile apps can truly begin. If you
-                                    are a
-                                    developer, I can also share, the plan is to
-                                    make these apps open source.
+                    </li>
+                    <li class="mt-4 md:mt-0">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
+                                    <img class="h-8 w-8" src="/images/icons/noun_tracker_1315948.svg"
+                                        alt="ADD ALT icon">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
+                                    Unlike Facebook Events,
+                                </h5>
+                                <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
+                                    Guildflow will never sell your group data or use it to power an advertising
+                                    platform.
                                 </p>
 
-                                <p class="text-lg leading-6 text-gray-900 gf-prose">
-                                    In the meantime, I will also say, the websites that Guildflow generates are built to
-                                    support a responsive design and will work great on phones and tablets. If you spot
-                                    anything that you feel could be improved, <a href="/contact">let me know</a>.
+                                <p class="text-base sm:text-xl leading-6 text-gray-900">Why let involvement in a
+                                    sensitive group, like a divorce or substance-abuse support group, influence the ads
+                                    your
+                                    household sees.</p>
                                 </p>
-                            </dd>
+                            </div>
                         </div>
+                    </li>
+                    <li class="mt-4 md:mt-0">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
+                                    <img class="h-8 w-8" src="/images/icons/noun_Privacy_2399381.svg"
+                                        alt="ADD ALT icon">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
+                                    Unlike Meetup.com and Facebook Events,
+                                </h5>
+                                <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
+                                    Member details, including RSVP status, are never shared on the public internet. </p>
 
-                    </div>
-                    <div class="mt-12 md:mt-0">
-                        <div class="">
-                            <dt class="text-lg leading-6 font-bold text-gray-900">
-                                When will Guildflow be ready?
-                            </dt>
-                            <dd class="mt-2">
-                                <p class="text-lg leading-6 text-gray-900">
-                                    While there are some active groups using Guildflow during our current alpha release,
-                                    the stable 1.0 release is planned around the Fall 2020 time frame.
+                                <p class="text-base sm:text-xl leading-6 text-gray-900">Why should a current boss be
+                                    able
+                                    to discover someone attending a resume workshop. With Guildflow, members have
+                                    meaningful privacy controls.</p>
                                 </p>
-                            </dd>
+                            </div>
                         </div>
-                        <div class="mt-12">
-                            <dt class="text-lg leading-6 font-bold text-gray-900">
-                                How much will Guildflow cost?
-                            </dt>
-                            <dd class="mt-2">
-                                <p class="text-lg leading-6 text-gray-900">
-                                    Pricing is still to be finalized. Expect a monthly subscription fee similar to that
-                                    of
-                                    Meetup.com with possible discounts for a yearly plan.
+                    </li>
+                    <li class="mt-4 md:mt-0">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gf-orange">
+                                    <img class="h-8 w-8" src="/images/icons/noun_website_375624.svg" alt="ADD ALT icon">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="sm:mb-1 text-base sm:text-xl leading-6 text-gray-900 font-bold">
+                                    Unlike Meetup.com and Facebook Events,
+                                </h5>
+                                <p class="text-base sm:text-xl leading-6 text-gray-900 mb-4">
+                                    Your group website does not live in the shell of a third-party provider.</p>
+
+                                <p class="text-base sm:text-xl leading-6 text-gray-900">The focus is on your group, not
+                                    the
+                                    tools running it. You can even use a custom domain that you own and
+                                    control.</p>
                                 </p>
-                            </dd>
+                            </div>
                         </div>
-                        <div class="mt-12">
-                            <dt class="text-lg leading-6 font-bold text-gray-900">
-                                Will Guildflow have a free plan?
-                            </dt>
-                            <dd class="mt-2">
-                                <p class="text-lg leading-6 text-gray-900 mb-4">
-                                    At launch Guildflow will not to offer a free plan.
-                                </p>
-                                <p class="text-lg leading-6 text-gray-900 mb-4">
-                                    There will be some kind of trial phase for a new group as well as lots of
-                                    screenshots
-                                    and videos to help people understand
-                                    what Guildflow is capable of and if it would be a good fit for their group.
-                                </p>
-                                <p class="text-lg leading-6 text-gray-900">
-                                    The decision to require a paid plan goes along with the spirit of providing better
-                                    privacy tools. The reason other platforms can offer a free plan is
-                                    because they are selling your data. To be sustainable Guildflow needs to charge for
-                                    its services.
-                                </p>
-                            </dd>
-                        </div>
-                    </div>
-                </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <h1
+                    class="mt-8 mb-4 text-xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-2xl sm:leading-10 lg:text-center">
+                    And all of the standard meetup tools you'd expect!
+                </h1>
+                <div class="max-w-screen-md mx-auto text-xl">
+                    <ul class="list-disc px-6">
+                        <li>Build and share an <strong>event calendar</strong> with RSVPs.</li>
+                        <li>Limit <strong>Video Chat URLs</strong> sharing to RSVPed members.</li>
+                        <li>Provide a <strong>membership directory</strong> so people can learn more about each other.
+                        </li>
+                        <li>Create a <strong>custom Membership Application</strong> to capture background info before
+                            letting unverified people get group
+                            access.</li>
+                        <li>Connect with other tools via a <strong>modern GraphQL API</strong>.</li>
+                    </ul>
+                </div>
+                <h3
+                    class="mt-8 mb-4 text-lg leading-8 font-bold tracking-tight text-gray-900 sm:text-xl sm:leading-10 lg:text-center gf-prose">
+                    Join the <a href="/newsletter/">announcement email list</a> get notified when Guildflow is ready.
+                </h3>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="">
+        <div class="">
+            <div class="max-w-screen-xl mx-auto pt-12 pb-8 sm:pt-16 sm:pb-10 px-4 sm:px-6 lg:pt-8 lg:pb-12 lg:px-8">
+                <div class="lg:text-center">
+                    <h1
+                        class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                        Frequently Asked Questions
+                    </h1>
+                </div>
+                <div class="mt-6 border-t-2 border-gray-100 pt-10">
+                    <dl class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <div>
+                                <dt class="text-lg leading-6 font-bold text-gray-900">
+                                    Can I import my members from Meetup.com?
+                                </dt>
+                                <dd class="mt-2">
+                                    <p class="text-lg leading-6 text-gray-900 mb-4">
+                                        Right now sadly, no.
+                                    </p>
+
+                                    <p class="text-lg leading-6 text-gray-900 mb-4">
+                                        One of the main reasons I am building Guildflow is because Meetup.com does not
+                                        provide the group owner full access to the member data, including email
+                                        addresses.
+                                        As such, any export would be incomplete or inaccurate.
+                                    </p>
+
+                                    <p class="text-lg leading-6 text-gray-900 gf-prose">
+                                        I do have some ideas on paper that might help with this in the future. If this
+                                        is a
+                                        must have for your group,
+                                        please <a href="/contact">contact me</a> and let's talk.
+                                    </p>
 
 
-<div class="mt-12 py-8 bg-gray-100">
-    <div class="meet-the-developer lg:max-w-screen-lg lg:mx-auto">
-        {{- partial "meet-the-developer-content.html" . -}}
-    </div>
-</div>
+                                </dd>
+                            </div>
+                            <div class="mt-12">
+                                <dt class="text-lg leading-6 font-bold text-gray-900">
+                                    Are there native iOS or Android mobile apps for Guildflow?
+                                </dt>
+                                <dd class="mt-2">
+                                    <p class="text-lg leading-6 text-gray-900 mb-4">
+                                        Getting the API working is a foundational requirement for native mobile
+                                        apps. Once
+                                        the API is in a good place the creation of the mobile apps can truly begin. If
+                                        you
+                                        are a
+                                        developer, I can also share, the plan is to
+                                        make these apps open source.
+                                    </p>
 
-<div class="mt-12 py-8">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-            <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                Let's Chat
-            </h1>
-            <p class="mt-2 gf-prose">
-                Grab some time on <a href="https://calendly.com/zorn/open-meeting">my calendar</a> or <a
-                    href="/contact">send me an email</a>.
-            </p>
+                                    <p class="text-lg leading-6 text-gray-900 gf-prose">
+                                        In the meantime, I will also say, the websites that Guildflow generates are
+                                        built to
+                                        support a responsive design and will work great on phones and tablets. If you
+                                        spot
+                                        anything that you feel could be improved, <a href="/contact">let me know</a>.
+                                    </p>
+                                </dd>
+                            </div>
+
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <div class="">
+                                <dt class="text-lg leading-6 font-bold text-gray-900">
+                                    When will Guildflow be ready?
+                                </dt>
+                                <dd class="mt-2">
+                                    <p class="text-lg leading-6 text-gray-900">
+                                        While there are some active groups using Guildflow during our current alpha
+                                        release,
+                                        the stable 1.0 release is planned around the Fall 2020 time frame.
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="mt-12">
+                                <dt class="text-lg leading-6 font-bold text-gray-900">
+                                    How much will Guildflow cost?
+                                </dt>
+                                <dd class="mt-2">
+                                    <p class="text-lg leading-6 text-gray-900">
+                                        Pricing is still to be finalized. Expect a monthly subscription fee similar to
+                                        that
+                                        of
+                                        Meetup.com with possible discounts for a yearly plan.
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="mt-12">
+                                <dt class="text-lg leading-6 font-bold text-gray-900">
+                                    Will Guildflow have a free plan?
+                                </dt>
+                                <dd class="mt-2">
+                                    <p class="text-lg leading-6 text-gray-900 mb-4">
+                                        At launch Guildflow will not to offer a free plan.
+                                    </p>
+                                    <p class="text-lg leading-6 text-gray-900 mb-4">
+                                        There will be some kind of trial phase for a new group as well as lots of
+                                        screenshots
+                                        and videos to help people understand
+                                        what Guildflow is capable of and if it would be a good fit for their group.
+                                    </p>
+                                    <p class="text-lg leading-6 text-gray-900">
+                                        The decision to require a paid plan goes along with the spirit of providing
+                                        better
+                                        privacy tools. The reason other platforms can offer a free plan is
+                                        because they are selling your data. To be sustainable Guildflow needs to charge
+                                        for
+                                        its services.
+                                    </p>
+                                </dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+            </div>
         </div>
-        <div class=" mt-6 md:mt-10">
+    </div>
 
+
+    <div class="mt-12 py-8 bg-gray-100">
+        <div class="meet-the-developer lg:max-w-screen-lg lg:mx-auto">
+            {{- partial "meet-the-developer-content.html" . -}}
         </div>
     </div>
-</div>
+
+    <div class="mt-12 py-8">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h1
+                    class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                    Let's Chat
+                </h1>
+                <p class="mt-2 gf-prose">
+                    Grab some time on <a href="https://calendly.com/zorn/open-meeting">my calendar</a> or <a
+                        href="/contact">send me an email</a>.
+                </p>
+            </div>
+            <div class=" mt-6 md:mt-10">
+
+            </div>
+        </div>
+    </div>
+
+</div> <!-- end wrapper to store showIntroVideo state -->
 
 {{ end }}
