@@ -22,6 +22,7 @@ Discussion topics from the video:
 * How should meetups evolve?
 	* More events, smaller events.
 	* Some in-person, some online.
+	* Not every member will attend every event.
 	* Social events: hack nights, side project saturday, show and tell.
 	* Goal-oriented events: book clubs, workshops, mentoring, masterminds, [side project time bartering](http://mikezornek.com/posts/2020/8/bartering-with-other-developers-on-side-projects/).
 	* Passive connections: Chatting and DM via Slack or Discord. Group Twitter account to promote member successes.
