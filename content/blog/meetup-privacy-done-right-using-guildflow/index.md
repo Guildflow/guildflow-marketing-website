@@ -40,7 +40,7 @@ Another way Guildflow honors the privacy concerns of members is by requiring con
 
 Organizing a meetup group can be an extremely rewarding endeavor. Please take the time to consider the long term implications about the tools you use to help run that group.
 
-Guildflow is still in development but available as a public alpha. 
+Guildflow is still in development but available as a beta. 
 
 We encourage people who would like to hear more about its continued progress to join our [mailing list](/newsletter) or follow our [blog RSS feed](#). You can also follow us on social media at [@guildflow on Twitter](https://twitter.com/guildflow) or [@guildflow on Micro.blog](https://micro.blog/guildflow). 
 
