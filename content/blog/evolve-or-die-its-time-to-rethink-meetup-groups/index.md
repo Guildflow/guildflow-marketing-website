@@ -4,6 +4,7 @@ date: 2020-08-30T14:10:57-04:00
 description: While meetups have lots of individual and social benefits, many have not evolved and are on a declining trajectory. In today’s video we’ll ponder as to the causes of this decline and how you can evolve your own meetup group to not only survive, but thrive.
 images:
   - blog/evolve-or-die-its-time-to-rethink-meetup-groups/thumb.jpeg
+aliases: /blog/evolve/
 ---
 
 {{< vimeo 453062548 >}}
