@@ -4,6 +4,23 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.10.0 -- September 13, 2020
+
+* [ADDED] You can no longer use the subdomain `help` as we are using that for our knowledge base.  
+* [CHANGED] Updated the terminology we use to let an admin "Edit Event" from the public detail page and "View Public Page" from the admin event detail page.
+* [CHANGED] Updated the description of Video Chat URL privacy behavior to the onboarding screens.
+* [CHANGED] Fixed typos during onboarding.
+* [CHANGED] Fixed broken link styles on member profile page.
+* [ADDED] A new group owner will get a welcome email after finishing the new group onboarding.
+* [ADDED] The Manage Group admin section now includes a way to browse the Members.
+* [ADDED] When viewing a member in the Manage Group admin section you can grant or revoke admin privileges for non-owner members.
+
+### Behind the Scenes Stuff
+
+* [CHANGED] Updated SSL certificates.
+* [ADDED] The TailwindCSS configuration now includes `gf-orange` and `gf-blue` for the marketing-styled "Create Group" form. 
+* [REMOVED] Deleted some old CSS `gf-prose-marketing` and `prose-marketing` that is no longer needed.
+
 ## 0.9.1 -- August 21, 2020
 
 * [CHANGED] No longer using a relative positioning of the "Manage Group" link in the navigation area. This lets us remove a `z-20` adjustment to the account menu popup. The hope is this changes fixes a menu flash on page load issue observed using Firefox (but is hard to replicate during local development since the assets seem to load differently).  
