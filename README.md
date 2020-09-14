@@ -9,4 +9,4 @@ To run the site locally use:
     hugo server --disableFastRender --buildDrafts --buildFuture
 To make a new post
 
-    hugo new blog/actionable-ideas-how-meetups-can-evolve-when-forced-online-only/index.md
+    hugo new blog/demo-group-export-and-email-access/index.md
