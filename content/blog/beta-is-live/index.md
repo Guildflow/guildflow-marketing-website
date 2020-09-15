@@ -1,11 +1,12 @@
 ---
-title: Beta Access
-description: Like what you see? Find out how to join the beta!
-layout: "single-basic"
-aliases: /public-alpha/
+title: "Beta is Live!"
+date: 2020-09-15T16:34:00-04:00
+description: I recently launched the Guildflow Beta and am now welcoming new testers!
+images:
+  - blog/title/thumb.jpg
 ---
 
-If you would like to join the Guildflow beta, you'll need to schedule a 30 minute video chat.
+If you would like to join the beta, you'll need to schedule a 30 minute video chat.
 
 During this video chat we will:
 
