@@ -11,6 +11,9 @@ params:
   mainCtaUrl: /beta
 menu:
   main:
+    - name: Story
+      url: /story/
+      weight: 45
     - name: Blog
       url: /blog/
       weight: 30
