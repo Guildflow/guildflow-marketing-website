@@ -7,7 +7,7 @@
     "author": "dirkolbrich <github@dirkolbrich.de>",
     "license": "MIT",
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^2.1.2",
+        "@fullhuman/postcss-purgecss": "^3.0.0",
         "autoprefixer": "^9.7.6",
         "postcss": "^7.0.27",
         "postcss-cli": "^7.1.2",
