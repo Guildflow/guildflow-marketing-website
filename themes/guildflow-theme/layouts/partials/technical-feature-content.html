@@ -1,0 +1,27 @@
+<div class="features mt-12 py-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+            <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                Tools built for technical meetups.
+            </h1>
+        </div>
+        <div class="mt-6 md:mt-10">
+            <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+                {{ range $.Page.Site.Data.technicalfeatures }}
+                <li class="mt-4 md:mt-0">
+                    <div class="ml-4">
+                        <h5 class="sm:mb-1 text-2xl sm:text-2xl leading-6 font-bold text-gray-900">
+                            {{ .title }}
+                        </h5>
+                        <ul class="list-disc pl-6">
+                            {{ range .items }}
+                            <li class="text-xl my-2">{{ . | safeHTML }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>

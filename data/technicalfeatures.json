@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Curate Members",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "Customize your <strong>membership application</strong>.",
+            "Share private <strong>join links</strong> with prospective members.",
+            "Promote a <strong>group directory</strong> with tech-focused member profiles, including things like GitHub profiles and project links.",
+            "Send <strong>broadcast emails</strong> to the entire membership or just those attending an event."
+        ]
+    },
+    {
+        "title": "Host Events",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "Document your agenda with <strong>Markdown descriptions</strong>.",
+            "<strong>Collect RSVPs</strong> from Members.",
+            "Publish online <strong>Video Chat URLs</strong>, only accessible to attending members."
+        ]
+    },
+    {
+        "title": "Document Past Events",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "<strong>Attach files</strong> to events for things like: slides, notes, photos, videos and links.",
+            "<strong>Connect presentations</strong> to members to build a rich event history.",
+            "Share <strong>event archives</strong> publicly or limit to members-only."
+        ]
+    },
+    {
+        "title": "Automate and Track Repetitive Admin Tasks",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "Define <strong>common things to do for meetings</strong>, new members, inactive members, etc.",
+            "<strong>Assign tasks</strong> across the group leadership",
+            "Perform integrated tasks directly from Guildflow, such as <strong>posting event announcements to Twitter</strong>."
+        ]
+    },
+    {
+        "title": "Personalize Your Group Website",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "Choose a <strong>public or private privacy level</strong> for the group website.",
+            "Create <strong>custom content pages</strong> for things like a group code of conduct, leadership profiles, sponsors or slack/discord invites information.",
+            "Subscribe to group or member specific <strong>iCal event feeds</strong>.",
+            "Connect to a <strong>GraphQL API</strong> and build out custom integrations."
+        ]
+    },
+    {
+        "title": "Own Your Data and Empower Member Privacy",
+        "icon": "noun_website_375624.svg",
+        "items": [
+            "Guildflow is the only meetup solution that has a structured, legal and documented way for members to opt-in to a <strong>group export feature</strong>.",
+            "Access and export the full data of your group when you need to, <strong>including member emails</strong>."
+        ]
+    }
+]
