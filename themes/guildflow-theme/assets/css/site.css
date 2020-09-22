@@ -15,6 +15,10 @@
   @apply mb-4;
 }
 
+.gf-prose blockquote p {
+  @apply ml-8 italic
+}
+
 .gf-prose h4 + p { 
   @apply mt-0;
 }
