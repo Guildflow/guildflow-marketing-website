@@ -26,7 +26,7 @@ When it comes to the meeting itself try to have different members volunteer to "
 
 This is something I know of more formally from the Game Jam concept but it can just as easily apply to general programming. 
 
-Over the course of a single weekend or week you pick a theme and/or a specific SDK. People then work on a demo, game or hack with that theme and SDK in mind. At the end of the event people present their work, with awards being handed out -- the more cheesy the awards and trophies are usually the more sought after they are within a community.
+Over the course of a single weekend or week you pick a theme and/or a specific SDK. People then work on a demo, game or hack with that theme and SDK in mind. At the end of the event people present their work, with awards being handed out -- the more cheesy the trophies the more sought after they are within a community.
 
 Some personal code jam style events I have fond memories of include [MacHack](https://en.wikipedia.org/wiki/MacHack), [Iron Coder](https://arstechnica.com/gadgets/2006/10/5786/) and [Global Game Jam](https://globalgamejam.org/).
 
@@ -34,9 +34,9 @@ Some personal code jam style events I have fond memories of include [MacHack](ht
 
 While Code Jams are more on the lighthearted side, these Architecture Craft Sessions are more about education through practice and peer review.
 
-Pick a simple app idea (eg: tasks list, weather app, whatever). Everyone does a rough prototype or architecture outline for how they would build it out: the objects and types they would define, how they would interact, and why they are making these decisions. Something akin to an [Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record).
+Pick a simple app idea (eg: tasks list, weather app, whatever). Everyone does a rough prototype or architecture outline for how they would build it out: the objects and types they would define, how they would interact, and why they are making these decisions. Something akin to an [architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record).
 
-The event style would be some advance notice of the app idea, then before the meeting each person would work on their prototype or outline in their own time. At the meeting they would come together to present what they've come up with. People can ask questions and offer feedback on the designs. It can take time to do a full code walk through so you might have to break up a larger group into smaller breakout groups to do this in a set amount of time.
+The event style would be advance notice of the app idea, then before the meeting each person would work on their prototype or outline in their own time. At the meeting they would come together to present what they've come up with. People can ask questions and offer feedback on the designs. It can take time to do a full code walk through so you might have to break up a larger group into smaller breakout groups to do this in a set amount of time.
 
 The big idea is people get more experience with how to break down problems and design architectures that are [SOLID](https://en.wikipedia.org/wiki/SOLID) and testable.
 
@@ -56,7 +56,7 @@ For more examples on Code Kata problems you can use check out:
 
 ## Open Source Project Day
 
-Rather than kick off a major new group open project (which has a much larger time and energy commitment), pick a day and an open source project for your platform. 
+Rather than kick off a major new group open source project (which has a much larger time and energy commitment), pick a day and an existing open source project for your platform. 
 
 Kick off the day with an introduction to the open source project, it's code and some good tasks for new contributors (simple bugs, documentations, more tests). Let people work async or in pairs, with shared group spaces for discussion or questions. At the end of the day people can demo the PRs they've built.
 
@@ -64,6 +64,6 @@ For people new to open source, match up mentors to teach how open source and pul
 
 ## Any other ideas?
 
-Those are few ideas from my own head and experiences. I'd love to hear if you have any more for a future update to this post.
+Those are few ideas from my own experiences. I'd love to hear if you have any more for a future update to this post.
 
 Thanks, and best of luck with your technical meetup.
