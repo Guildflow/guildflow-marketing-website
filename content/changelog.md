@@ -4,6 +4,24 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.11.0 -- September 26, 2020
+
+* [FIXED] The beta code on the create group form is now a password field.
+* [FIXED] The subdomain preview on the create group form now displayed the link as https.
+* [ADDED] Via the Manage Group admin section, admins can now add **Pages**! Pages let you publish arbitrary content about your group. Great for things like: code of conduct, a more descriptive about page, a meet the leadership page, info on how to sponsor or share job opportunities within the group. 
+  * Each pages includes:
+    * `title` - shown on the page and in the HTML title area.
+    * `url_slug` - helps influence the url the page can be loading with.
+    * `members_only` - true or false via a checkbox. Helps make sure some pages require a signed in member to view.
+    * `content` - the Markdown formatted content of the page. You can even link pages together to create a deeper content collection.
+* [ADDED] Via the Manage Group admin section, admins can edit the **Navigation Links** of the website. Add new links to point to custom page content and customize the visibility of links, helping you show some links to just signed in members and some links just to non-signed in members (eg: visitors).
+  * The default navigation links for a group will:
+    * Show "Home" to everyone.
+    * Show "Events" to everyone. Note: Some event details require a member to be signed in are are not included for public visitors (like the RSVP button or the Video Chat URL).
+    * Show "Members" to just signed in members. This is a change to previous behavior. Previously the navigation always listed the Members link in the navigation, even though the Members list content forced a member to be signed in.
+    * Show "Membership Application" to just non-signed in members (eg: visitors). This is a change to previous behavior. Previously we always showed the Membership Application, but since navigation space is limited and this page is less useful to signed it members, it is now hidden for signed in members.
+  * If you ever want to reset to these defaults, look for the button in the Navigation Links editor to do so.
+
 ## 0.10.0 -- September 13, 2020
 
 * [ADDED] You can no longer use the subdomain `help` as we are using that for our knowledge base.  
