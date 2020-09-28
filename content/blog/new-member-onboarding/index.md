@@ -1,10 +1,10 @@
 ---
 title: "Providing New Member Onboarding for Online Meetups During COVID"
-date: 2020-09-25T19:41:34-04:00
+date: 2020-09-28T11:41:34-04:00
 description: Draft a plan, automate the execution, share the responsibilities, learn how to better serve your members.
 ---
 
-Even in the before times, being a new person at a meetup event was potentially an extremely overwhelming experience. Now that most group events and socializing are happening online its even more important to make sure you as a group organizer have a plan for how to onboard new members and make them feel welcome.
+Even in the before times, being a new person at a meetup event was potentially an extremely overwhelming experience. Now that most group events and socializing are happening online it is even more important to make sure you as a group organizer have a plan for how to onboard new members and make them feel welcome.
 
 ## Create and plan an onboarding experience for new members.
 
@@ -14,7 +14,7 @@ Each group will have its own unique needs but a common onboarding experience mig
 
 **Connect the new member with a buddy or group sponsor.** While this could be the same person who did the "virtual tour" it would be more optimal to connect the new member with a buddy or sponsor that best matches their goals. Maybe they are looking to get a new job, who among the current members can help them work on a resume or practice an interview? Maybe they want to get better at testing, who among the current members can help with that?
 
-**Schedule followup check-ins with the new member.** Every so often, perhaps after the first 6 weeks and then maybe every 6 months, schedule a check-in and see how things are going. Have they attended any group events? How did they go? Are they socializing in the chat rooms? Try to find a way to get them involved. If they have not participated or stopped participating try to find out why. Make sure it's clear you have there confidence and are seeking honest feedback.
+**Schedule followup check-ins with the new member.** Every so often, perhaps after the first 6 weeks and then maybe every 6 months, schedule a check-in and see how things are going. Have they attended any group events? How did these go? Are they socializing in the chat rooms? Try to find a way to get them involved. If they have not participated or stopped participating try to find out why. Make sure it's clear you have their confidence, this is not a guilt trip and you are seeking honest feedback.
 
 ## Make new members and guests feel welcome at events.
 
@@ -22,11 +22,11 @@ Walking into a video call as a new face, when the other members already know eac
 
 Some people may feel more at ease **observing events from a distance** in the beginning, with their **video and microphone off**. If the event structure allows for this, then that behavior should acknowledged and accepted.
 
-For those who do decide to be on video or microphone, make sure there is **room in the agenda for personal introductions**. Have a few ice breaker questions or ask people to share a recent wins related to the topic of the event.
+For those who do decide to be on video or microphone, make sure there is **room in the agenda for personal introductions**. Have a few ice breaker questions or ask people to share a recent win related to the topic of the event.
 
-## Create spaces for more chaotic connections.
+## Create spaces for more happenstance connections.
 
-Sometimes people benefit from a little nudge towards social interactions. When building out your group try to build spaces and opportunities for more chaotic encounters. 
+Sometimes people benefit from a little nudge towards social interactions. When building out your group try to build spaces and opportunities for more chance encounters. 
 
 If you are on Slack, consider the [donut meeting integration](https://phillyelixir.slack.com/apps/A11MJ51SR-donut) addon. "Donut introduces people who don't know each other well on teams of all sizes via direct messages, and encourages them to meet in person or virtually for a variety of programs."
 
