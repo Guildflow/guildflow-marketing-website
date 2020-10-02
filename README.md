@@ -9,4 +9,4 @@ To run the site locally use:
     hugo server --disableFastRender --buildDrafts --buildFuture
 To make a new post
 
-    hugo new blog/demo-group-export-and-email-access/index.md
+    hugo new blog/pages-editable-navigation/index.md
