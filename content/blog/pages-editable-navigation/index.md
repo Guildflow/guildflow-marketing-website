@@ -1,31 +1,24 @@
 ---
 title: "Publishing Custom Page Content and Editable Website Navigation"
-date: 2020-10-01T13:35:30-04:00
-description: The open nature of pages and the editable website navigation let's a group start to make the website their own.
+date: 2020-10-05T09:35:30-04:00
+description: The open nature of pages and an editable website navigation lets a group make the website their own.
 images:
-  - blog/title/thumb.jpg
+  - blog/pages-editable-navigation/thumb.jpg
 ---
 
-VIDEO
+{{< vimeo 464247060 >}}
 
-* show off pages
-* what makes up a page
-* permissions
-
-* editable naviation
-* permissions demos
-* add, edit, sort, and delete.
 
 Via the Manage Group admin section, you can now create **Pages**! Pages let you publish arbitrary content about your group on the group website.
 
-Each Page is made up of the following: 
+Each page is made up of the following: 
 
-* **Title** - shown on the page as the first headline and in also displayed in the HTML title area.
+* **Title** - shown on the page as the first headline and is also displayed in the HTML title area.
 * **URL Slug** - the short string that defines the url the page can be loading with.
-* **Members Only?** - a checkbox when checked will force a member to be signed in to view the page.
+* **Members Only?** - a checkbox where when checked will force a member to be signed in to view the page.
 * **Content** - the Markdown formatted content of the page. You can even link pages together to create a deeper content collection.
 
-In addition to Pages, with this release admins can now also edit the **Navigation Links** of the website. 
+In addition to pages admins can now also edit the **Navigation Links** of the website. 
 
 Add new links to point to custom page content and customize the visibility of different links, helping you show some links to just signed in members and some links just to non-signed in members (eg: visitors).
 
@@ -38,7 +31,7 @@ The default navigation links for a group will be set to:
 
 If you ever want to reset to these defaults, look for the reset button in the Navigation Links editor to do so.
 
-The open nature of pages and the editable website navigation let's a group start to make the website their own. Some content ideas for pages could include:
+The open nature of pages and an editable website navigation lets a group make the website their own. Some content ideas for pages could include:
 
 * A more **detailed about page** describing your group.
 * A public page to **showcase the group leadership**.
