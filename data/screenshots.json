@@ -1,0 +1,90 @@
+[
+    {
+        "filename": "create_group.png",
+        "title": "Admin: Create Group"
+    },
+    {
+        "filename": "group_home.png",
+        "title": "Group Home"
+    },
+    {
+        "filename": "membership_application.png",
+        "title": "Membership Application"
+    },
+    {
+        "filename": "browse_members.png",
+        "title": "Browse Members"
+    },
+    {
+        "filename": "member_profile.png",
+        "title": "Member Profile"
+    },
+    {
+        "filename": "event_details.png",
+        "title": "Event Details"
+    },
+    {
+        "filename": "event_details_edit_rsvp.png",
+        "title": "Event Details, Edit RSVP"
+    },
+    {
+        "filename": "member_account_settings.png",
+        "title": "Member Account Settings"
+    },
+    {
+        "filename": "manage_group.png",
+        "title": "Admin: Manage Group"
+    },
+    {
+        "filename": "browse_events_as_admin.png",
+        "title": "Admin: Browse Events"
+    },
+    {
+        "filename": "create_event.png",
+        "title": "Admin: Create Event"
+    },
+    {
+        "filename": "view_event_as_admin.png",
+        "title": "Admin: Event Details"
+    },
+    {
+        "filename": "browse_members_as_admin.png",
+        "title": "Admin: Browse Members"
+    },
+    {
+        "filename": "browse_member_as_admin.png",
+        "title": "Admin: Member Details"
+    },
+    {
+        "filename": "browse_membership_applications_as_admin.png",
+        "title": "Admin: Browse Membership Applications"
+    },
+    {
+        "filename": "browse_membership_application_as_admin.png",
+        "title": "Admin: Browse Membership Application Details"
+    },
+    {
+        "filename": "browse_invites_as_admin.png",
+        "title": "Admin: Browse Invites"
+    },
+    {
+        "filename": "browse_pages_as_admin.png",
+        "title": "Admin: Browse Pages"
+    },
+    {
+        "filename": "view_page_as_admin.png",
+        "title": "Admin: Page Details"
+    },
+    {
+        "filename": "edit_navigation_links.png",
+        "title": "Admin: Edit Navigation Links"
+    },
+    {
+        "filename": "group_settings.png",
+        "title": "Admin: Group Settings"
+    },
+    {
+        "filename": "group_export.png",
+        "title": "Admin: Group Export"
+    }
+]
