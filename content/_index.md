@@ -1,4 +1,4 @@
 ---
-title: "Guildflow: Own your meetup."
-description: Build a website for your meetup group that honors the privacy rights of your members and won't hold your group's data hostage.
+title: "Guildflow helps people run successful technical meetups."
+description: Get noticed, make connections and boost your career by organizing a meetup around the technology that you love.
 ---
