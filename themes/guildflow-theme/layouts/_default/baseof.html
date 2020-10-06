@@ -6,20 +6,19 @@
 </head>
 
 <body>
+    {{ if not .IsHome }}
     {{- partial "header.html" . -}}
-
-    {{ if .IsHome }}
-    <main class="marketing-full-width-page-container">
-        {{- block "main" . }}{{- end }}
-    </main>
-    {{ else }}
-    <main class="marketing-page-container">
-        {{- block "main" . }}{{- end }}
-    </main>
     {{ end }}
 
+    <main>
+        {{- block "main" . }}{{- end }}
+    </main>
+
     {{/* partial "dev-parameters.html" . */}}
+
+    {{ if not .IsHome }}
     {{- partial "footer.html" . -}}
+    {{ end}}
 </body>
 
 </html>

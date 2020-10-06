@@ -7,12 +7,12 @@
     "author": "dirkolbrich <github@dirkolbrich.de>",
     "license": "MIT",
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^2.1.2",
-        "autoprefixer": "^9.7.6",
-        "postcss": "^7.0.27",
-        "postcss-cli": "^7.1.2",
+        "@fullhuman/postcss-purgecss": "^3.0.0",
+        "autoprefixer": "^10.0.0",
+        "postcss": "^8.1.1",
+        "postcss-cli": "^8.0.0",
         "postcss-import": "^12.0.1",
-        "tailwindcss": "^1.8.7"
+        "tailwindcss": "^1.8.10"
     },
     "browserslist": [
         "last 1 version",
@@ -21,6 +21,7 @@
         "not dead"
     ],
     "dependencies": {
-        "@tailwindcss/ui": "^0.5.0"
+        "@tailwindcss/typography": "^0.2.0",
+        "@tailwindcss/ui": "^0.6.2"
     }
 }
