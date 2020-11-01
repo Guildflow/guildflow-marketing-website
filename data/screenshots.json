@@ -1,89 +1,155 @@
 [
     {
+        "id": "s1",
+        "prev": "s22",
+        "next": "s2",
         "filename": "create_group.png",
         "title": "Admin: Create Group"
     },
     {
+        "id": "s2",
+        "prev": "s1",
+        "next": "s3",
         "filename": "group_home.png",
         "title": "Group Home"
     },
     {
+        "id": "s3",
+        "prev": "s2",
+        "next": "s4",
         "filename": "membership_application.png",
         "title": "Membership Application"
     },
     {
+        "id": "s4",
+        "prev": "s3",
+        "next": "s5",
         "filename": "browse_members.png",
         "title": "Browse Members"
     },
     {
+        "id": "s5",
+        "prev": "s4",
+        "next": "s6",
         "filename": "member_profile.png",
         "title": "Member Profile"
     },
     {
+        "id": "s6",
+        "prev": "s5",
+        "next": "s7",
         "filename": "event_details.png",
         "title": "Event Details"
     },
     {
+        "id": "s7",
+        "prev": "s6",
+        "next": "s8",
         "filename": "event_details_edit_rsvp.png",
         "title": "Event Details, Edit RSVP"
     },
     {
+        "id": "s8",
+        "prev": "s7",
+        "next": "s9",
         "filename": "member_account_settings.png",
         "title": "Member Account Settings"
     },
     {
+        "id": "s9",
+        "prev": "s8",
+        "next": "s10",
         "filename": "manage_group.png",
         "title": "Admin: Manage Group"
     },
     {
+        "id": "s10",
+        "prev": "s9",
+        "next": "s11",
         "filename": "browse_events_as_admin.png",
         "title": "Admin: Browse Events"
     },
     {
+        "id": "s11",
+        "prev": "s10",
+        "next": "s12",
         "filename": "create_event.png",
         "title": "Admin: Create Event"
     },
     {
+        "id": "s12",
+        "prev": "s11",
+        "next": "s13",
         "filename": "view_event_as_admin.png",
         "title": "Admin: Event Details"
     },
     {
+        "id": "s13",
+        "prev": "s12",
+        "next": "s14",
         "filename": "browse_members_as_admin.png",
         "title": "Admin: Browse Members"
     },
     {
+        "id": "s14",
+        "prev": "s13",
+        "next": "s15",
         "filename": "browse_member_as_admin.png",
         "title": "Admin: Member Details"
     },
     {
+        "id": "s15",
+        "prev": "s14",
+        "next": "s16",
         "filename": "browse_membership_applications_as_admin.png",
         "title": "Admin: Browse Membership Applications"
     },
     {
+        "id": "s16",
+        "prev": "s15",
+        "next": "s17",
         "filename": "browse_membership_application_as_admin.png",
         "title": "Admin: Browse Membership Application Details"
     },
     {
+        "id": "s17",
+        "prev": "s16",
+        "next": "s18",
         "filename": "browse_invites_as_admin.png",
         "title": "Admin: Browse Invites"
     },
     {
+        "id": "s18",
+        "prev": "s17",
+        "next": "s19",
         "filename": "browse_pages_as_admin.png",
         "title": "Admin: Browse Pages"
     },
     {
+        "id": "s19",
+        "prev": "s18",
+        "next": "s20",
         "filename": "view_page_as_admin.png",
         "title": "Admin: Page Details"
     },
     {
+        "id": "s20",
+        "prev": "s19",
+        "next": "s21",
         "filename": "edit_navigation_links.png",
         "title": "Admin: Edit Navigation Links"
     },
     {
+        "id": "s21",
+        "prev": "s20",
+        "next": "s22",
         "filename": "group_settings.png",
         "title": "Admin: Group Settings"
     },
     {
+        "id": "s22",
+        "prev": "s21",
+        "next": "s1",
         "filename": "group_export.png",
         "title": "Admin: Group Export"
     }

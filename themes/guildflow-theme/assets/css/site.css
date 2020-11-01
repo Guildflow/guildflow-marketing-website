@@ -1,3 +1,12 @@
+[x-cloak] {
+  display: none;
+}
+
+[x-cloak] {
+  visibility: hidden;
+  overflow: hidden
+}
+
 .gf-prose h1 {
   @apply text-4xl mb-2 font-bold leading-tight;
 }
