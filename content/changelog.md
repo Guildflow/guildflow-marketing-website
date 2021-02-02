@@ -4,6 +4,39 @@ description: A detailed reviews of behavior changes and bug fixes.
 layout: "single-basic"
 ---
 
+## 0.13.0 -- January 31, 2021
+
+* [ADDED] Group Leadership can now compose, review and publish messages to the group. From Manage Group, look for the new Messages section. There you can create and edit Messages. Once you are happy with a Message you can publish it, which will result in all the members getting the Message. Messages have a subject and Markdown-friendly body.
+* [ADDED] From the account menu, a signed in member can now browse their Messages. If you have new unread messages you'll be alerted with a red ring around your avatar in the menu as well as seeing a "New <#>" label next to Messages in the menu. Once you view a message or Mark All as Read this count will disappear.
+* [ADDED] When a member gets a new message they will now get an email notification with the contents of the message. This behavior can be disabled by a member form their settings page (Look for "EEmail Notification Setting").
+* [FIXED] We now trim the whitespace around an event description when generating an ical file. This helps fix an Apple iCal issue where it was not properly detecting end times.
+* [FIXED] Empty event descriptions no longer break Google calendar links.
+* [FIXED] Fixed some typos. Thanks for the report Brandon!
+
+### Behind the Scenes Stuff
+
+* [ADDED] Installed the [credo](https://github.com/rrrene/credo), static code analysis tool and have begun to address some of it's feedback. There are still know issues, but the improvements that have been made are for the better so they are being committed as in-progress.
+* [CHANGED] Updated AppSignal to version 2 along with a bunch of other minor library versions.
+
+## 0.12.1 -- November 8, 2020
+
+* [FIXED] Back ported some recent time formatting code to a pre-1.11 format, since we have temp issues updating to Elixir 1.11 in production.
+
+## 0.12.0 -- November 8, 2020
+
+* [FIXED] Add `x-cloak` attribute and css to help avoid account menu from flashing on page load in Firefox.
+* [ADDED] The event detail page now has an Add to Calendar tool!
+  * Clicking "iCal" will download an `.ics` file with the event details. If you are signed in and have an RSVP to the event, the location will include the video chat URL.
+  * Clicking "Google Calendar" will open a new window with a new event form filed out. Similarly to the `.ics` file, if you are signed in and have an RSVP to the event, the location will include the video chat URL.
+    * Since the Google Calendar form does not have a place for the event detail page url, it is added to the event description.
+
+### Behind the Scenes Stuff
+
+* [CHANGED] Updated the demo group from `movietime` to `testingclub`, which is more developer focused and inline with Guildflow marketing / screenshot needs. This sample group is also now using some of the newer features like Pages more accurately.
+* [CHANGED] Now requiring Elixir 1.11.
+* [FIXED] Updated some syntax this to address new 1.11 deprecations and other warnings.
+
+
 ## 0.11.0 -- September 26, 2020
 
 * [FIXED] The beta code on the create group form is now a password field.
