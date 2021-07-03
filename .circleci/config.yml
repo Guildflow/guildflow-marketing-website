@@ -32,7 +32,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: sudo apt-get update && sudo apt-get install -y ruby-full zlib1g-dev
-      - run: sudo gem install html-proofer --no-document
+      - run: sudo gem install html-proofer -v 3.19.1 --no-document
       - run:
           name: "Test Website"
           command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
