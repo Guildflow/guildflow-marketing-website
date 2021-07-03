@@ -35,7 +35,7 @@ jobs:
       - run: sudo gem install html-proofer -v 3.19.1 --no-document
       - run:
           name: "Test Website"
-          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external --checks-to-ignore ScriptCheck
 
   deploy:
     docker:
