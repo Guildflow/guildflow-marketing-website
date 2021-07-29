@@ -80,7 +80,7 @@ Stewardship of your data and information is critical to us and a responsibility 
 * Protect all users, and 
 * Provide trusted services. 
 
-We publish a Transparency Report as part of our commitment to informing you about when and how governments ask us for information. This report details the types and numbers of requests we receive from law enforcement. We encourage you to review our Government Request and Transparency Report for more detailed information on our approach and response to government requests. 
+We publish a [Transparency Report](/transparency/) as part of our commitment to informing you about when and how governments ask us for information. This report details the types and numbers of requests we receive from law enforcement. We encourage you to review our Government Request and Transparency Report for more detailed information on our approach and response to government requests. 
 
 ## How 
 
